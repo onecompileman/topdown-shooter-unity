@@ -48,6 +48,8 @@ public class Boss1 : EnemyController
 
     public float originalSpeed;
 
+    private int laserAttacks = 0;
+
     private AudioSource audioSource;
 
     void Start()
@@ -104,6 +106,14 @@ public class Boss1 : EnemyController
 
     private IEnumerator LaserAttack()
     {
+
+        // if (laserAttacks == 0)
+        // {
+        //     yield return new WaitForSeconds(1.5f);
+        // }
+
+        laserAttacks++;
+
         canLaserAttack = false;
         laserCharge.Play();
         energySphere.Stop();

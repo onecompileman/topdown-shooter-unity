@@ -107,9 +107,22 @@ public class PlayerController : MonoBehaviour
         StartCoroutine("TakeDamage");
     }
 
+    public void TakeLifeEffect(float life)
+    {
+        life = Mathf.Clamp(life, 0, 100);
+        StartCoroutine("TakeLife");
+    }
+
     private IEnumerator TakeDamage()
     {
         playerSkin.color = new Color(150, 150, 150);
+        yield return new WaitForSeconds(0.2f);
+        playerSkin.color = originalColor;
+    }
+
+    private IEnumerator TakeLife()
+    {
+        playerSkin.color = new Color(0.3f, 1, 0.3f);
         yield return new WaitForSeconds(0.2f);
         playerSkin.color = originalColor;
     }

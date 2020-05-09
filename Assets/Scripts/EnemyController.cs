@@ -66,7 +66,19 @@ public class EnemyController : MonoBehaviour
     public float dashTime;
 
     [SerializeField]
+    public bool canDropHealth;
+
+    [SerializeField]
+    public float lifeToAdd;
+
+    [SerializeField]
+    public GameObject health;
+
+    [SerializeField]
     public float dashCooldownTime;
+
+    [SerializeField]
+    public int mainSkinIndex = 0;
 
     public float lookSpeed = 1f;
     public bool canAttack = true;
@@ -82,9 +94,11 @@ public class EnemyController : MonoBehaviour
 
     public bool isDashing = false;
 
-    private Animator animator;
+    public Animator animator;
 
     public Material enemySkin;
+
+    public bool isExploding = false;
 
     private Vector3 velocity;
 
@@ -94,7 +108,7 @@ public class EnemyController : MonoBehaviour
     public void Start()
     {
         animator = GetComponent<Animator>();
-        enemySkin = meshRenderer.material;
+        enemySkin = meshRenderer.materials[mainSkinIndex];
         originalColor = new Color { r = enemySkin.color.r, g = enemySkin.color.g, b = enemySkin.color.b };
         originalLife = life;
         velocity = new Vector3(0, 0, 0);
@@ -121,7 +135,7 @@ public class EnemyController : MonoBehaviour
         enemySpeed = isDashing && !canDash ? dashSpeed : enemySpeed;
         enemySpeed = dashForward && !isDashing ? 0 : enemySpeed;
 
-        Debug.Log(isDashing + " " + enemySpeed + " " + dashForward);
+        enemySpeed = isExploding ? 0 : enemySpeed;
 
         animator.SetFloat(speedId, velocity.magnitude * enemySpeed);
 
@@ -148,6 +162,14 @@ public class EnemyController : MonoBehaviour
     public virtual void OnDeath()
     {
         Instantiate(deathEffects, transform.position, Quaternion.identity);
+
+        if (canDropHealth)
+        {
+            var healthObject = Instantiate(health, transform.position, Quaternion.identity);
+
+            healthObject.GetComponent<HealthPowerup>().lifeToAdd = lifeToAdd;
+        }
+
         Destroy(gameObject);
     }
 
@@ -185,7 +207,7 @@ public class EnemyController : MonoBehaviour
         else
         {
             float angle = Mathf.Atan2(bulletPoint.transform.forward.z, bulletPoint.transform.forward.x) * Mathf.Rad2Deg;
-            float angleStart = angle - (bulletAngle / 2);
+            float angleStart = angle - (bulletAngle / Random.Range(2f, 3f));
             float angleIncrement = bulletAngle / bulletsToFire;
             for (int i = 0; i < bulletsToFire; i++)
             {
@@ -240,7 +262,7 @@ public class EnemyController : MonoBehaviour
     }
 
 
-    void OnCollisionEnter(Collision obj)
+    public virtual void OnCollisionEnter(Collision obj)
     {
         if (canAttack && obj.gameObject.tag == "Player")
         {
