@@ -27,6 +27,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     public bool isMobile = true;
 
+    [SerializeField]
+    public GameObject stun;
+
+    public bool isStunned = false;
+
     private Material playerSkin;
 
     private Color originalColor;
@@ -84,6 +89,8 @@ public class PlayerController : MonoBehaviour
 
         var movespeed = isRolling ? rollingSpeed : speed;
 
+        movespeed = isStunned ? 0 : movespeed;
+
         // Debug.Log(velocity.magnitude * movespeed);
         animator.SetFloat(speedId, velocity.magnitude == 0 ? 0 : movespeed);
 
@@ -107,10 +114,24 @@ public class PlayerController : MonoBehaviour
         StartCoroutine("TakeDamage");
     }
 
-    public void TakeLifeEffect(float life)
+    public void TakeLifeEffect(float l)
     {
-        life = Mathf.Clamp(life, 0, 100);
+        life = Mathf.Clamp(life + l, 0, 100);
         StartCoroutine("TakeLife");
+    }
+
+    public void StunPlayer(float cooldown)
+    {
+        StartCoroutine("StunPlayerEffect", cooldown);
+    }
+
+    private IEnumerator StunPlayerEffect(float cooldown)
+    {
+        isStunned = true;
+        stun.SetActive(true);
+        yield return new WaitForSeconds(cooldown);
+        stun.SetActive(false);
+        isStunned = false;
     }
 
     private IEnumerator TakeDamage()
@@ -126,6 +147,7 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(0.2f);
         playerSkin.color = originalColor;
     }
+
 
     private IEnumerator Roll()
     {

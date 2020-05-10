@@ -49,9 +49,9 @@ GameObject:
   - component: {fileID: 228547266192698094}
   - component: {fileID: 8260640031525451289}
   - component: {fileID: 9134143291269945949}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -144,8 +144,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 9.999999, y: 0.4, z: 9.999996}
-  m_Center: {x: 0, y: 0, z: -0.0000010038675}
+  m_Size: {x: 9.999999, y: 1, z: 9.999996}
+  m_Center: {x: 0, y: -0.55, z: -0.0000010038675}
 --- !u!1 &228547266732147132
 GameObject:
   m_ObjectHideFlags: 0

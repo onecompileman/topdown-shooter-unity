@@ -90,7 +90,27 @@ public class EnemyController : MonoBehaviour
     public bool dashForward;
 
     [SerializeField]
+    public bool canRotateFire = false;
+
+    [SerializeField]
     public ParticleSystem dashEffects;
+
+    [SerializeField]
+    public float angleRotateSpeed = 1f;
+
+    [SerializeField]
+    public bool canShootExploding = false;
+
+    [SerializeField]
+    public GameObject explodingBullet;
+
+    [SerializeField]
+    public float explodingBulletDamage;
+
+    [SerializeField]
+    public float explodingBulletSpeed;
+
+    private float angleFire;
 
     public bool isDashing = false;
 
@@ -107,6 +127,7 @@ public class EnemyController : MonoBehaviour
     public Color originalColor;
     public void Start()
     {
+        angleFire = transform.rotation.y;
         animator = GetComponent<Animator>();
         enemySkin = meshRenderer.materials[mainSkinIndex];
         originalColor = new Color { r = enemySkin.color.r, g = enemySkin.color.g, b = enemySkin.color.b };
@@ -116,6 +137,7 @@ public class EnemyController : MonoBehaviour
     }
     void Update()
     {
+        angleFire += angleRotateSpeed;
         if (life <= 0)
         {
             OnDeath();
@@ -195,35 +217,76 @@ public class EnemyController : MonoBehaviour
     {
         if (bulletsToFire == 1)
         {
-            var enemyBullet = Instantiate(bullet, bulletPoint.position, Quaternion.identity);
+            if (explodingBullet)
+            {
+                var bulletObject = Instantiate(explodingBullet, bulletPoint.position, Quaternion.identity);
 
-            var bulletScript = enemyBullet.GetComponent<Bullet>();
+                var bulletScript = bulletObject.GetComponent<ExplodingBullet>();
 
-            bulletScript.velocity = bulletPoint.transform.forward;
-            bulletScript.damage = damage;
-            bulletScript.speed = bulletSpeed;
-            bulletScript.maxDistance = bulletMaxDistance;
-        }
-        else
-        {
-            float angle = Mathf.Atan2(bulletPoint.transform.forward.z, bulletPoint.transform.forward.x) * Mathf.Rad2Deg;
-            float angleStart = angle - (bulletAngle / Random.Range(2f, 3f));
-            float angleIncrement = bulletAngle / bulletsToFire;
-            for (int i = 0; i < bulletsToFire; i++)
+                bulletScript.velocity = bulletPoint.transform.forward;
+                bulletScript.speed = explodingBulletSpeed;
+                bulletScript.damage = damage;
+                bulletScript.explodeDamage = explodingBulletDamage;
+            }
+            else
             {
                 var enemyBullet = Instantiate(bullet, bulletPoint.position, Quaternion.identity);
 
                 var bulletScript = enemyBullet.GetComponent<Bullet>();
 
-                float a = angleStart * Mathf.Deg2Rad;
-                var bulletVelocity = new Vector3(Mathf.Cos(a), 0, Mathf.Sin(a));
-
-                bulletScript.velocity = bulletVelocity;
+                bulletScript.velocity = bulletPoint.transform.forward;
                 bulletScript.damage = damage;
                 bulletScript.speed = bulletSpeed;
                 bulletScript.maxDistance = bulletMaxDistance;
+            }
+        }
+        else
+        {
 
-                angleStart += angleIncrement;
+            if (canShootExploding)
+            {
+                float angle = Mathf.Atan2(bulletPoint.transform.forward.z, bulletPoint.transform.forward.x) * Mathf.Rad2Deg;
+                float angleStart = canRotateFire ? angleFire + angle - (bulletAngle / 2) : angle - (bulletAngle / Random.Range(2f, 3f));
+                float angleIncrement = bulletAngle / bulletsToFire;
+                for (int i = 0; i < bulletsToFire; i++)
+                {
+                    var enemyBullet = Instantiate(explodingBullet, bulletPoint.position, Quaternion.identity);
+
+                    var bulletScript = enemyBullet.GetComponent<ExplodingBullet>();
+
+                    float a = angleStart * Mathf.Deg2Rad;
+                    var bulletVelocity = new Vector3(Mathf.Cos(a), 0, Mathf.Sin(a));
+
+                    bulletScript.velocity = bulletVelocity;
+                    bulletScript.damage = damage;
+                    bulletScript.speed = bulletSpeed;
+                    bulletScript.explodeDamage = explodingBulletDamage;
+
+                    angleStart += angleIncrement;
+                }
+
+            }
+            else
+            {
+                float angle = Mathf.Atan2(bulletPoint.transform.forward.z, bulletPoint.transform.forward.x) * Mathf.Rad2Deg;
+                float angleStart = canRotateFire ? angleFire + angle - (bulletAngle / 2) : angle - (bulletAngle / Random.Range(2f, 3f));
+                float angleIncrement = bulletAngle / bulletsToFire;
+                for (int i = 0; i < bulletsToFire; i++)
+                {
+                    var enemyBullet = Instantiate(bullet, bulletPoint.position, Quaternion.identity);
+
+                    var bulletScript = enemyBullet.GetComponent<Bullet>();
+
+                    float a = angleStart * Mathf.Deg2Rad;
+                    var bulletVelocity = new Vector3(Mathf.Cos(a), 0, Mathf.Sin(a));
+
+                    bulletScript.velocity = bulletVelocity;
+                    bulletScript.damage = damage;
+                    bulletScript.speed = bulletSpeed;
+                    bulletScript.maxDistance = bulletMaxDistance;
+
+                    angleStart += angleIncrement;
+                }
             }
         }
         muzzle.Play();

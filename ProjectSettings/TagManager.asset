@@ -9,6 +9,7 @@ TagManager:
   - PlayerBullet
   - Blocker
   - EnemyLaser
+  - Ground
   layers:
   - Default
   - TransparentFX

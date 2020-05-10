@@ -7,6 +7,19 @@ public class Bullet : MonoBehaviour
 
     [SerializeField]
     public ParticleSystem collideEffects;
+
+    [SerializeField]
+    public bool isExploding = false;
+
+    [SerializeField]
+    public float explosionRadius;
+
+    [SerializeField]
+    public bool canStun = false;
+
+    [SerializeField]
+    public float stunDuration;
+
     public float damage = 20;
 
     public float speed = 30;
@@ -20,7 +33,7 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         transform.Translate(velocity * speed * Time.deltaTime);
-        distanceTravelled += speed * Time.deltaTime;
+        // distanceTravelled += speed * Time.deltaTime;
         if (distanceTravelled >= maxDistance)
         {
             Destroy(gameObject);
@@ -30,6 +43,8 @@ public class Bullet : MonoBehaviour
 
     void OnTriggerEnter(Collider col)
     {
+
+        Debug.Log(col.gameObject.tag);
         if (col.gameObject.tag == "Enemy" && gameObject.tag == "PlayerBullet")
         {
             Instantiate(collideEffects, transform.position, Quaternion.identity);
@@ -56,6 +71,13 @@ public class Bullet : MonoBehaviour
             var playerScript = col.GetComponent<PlayerController>();
             playerScript.life -= damage;
             playerScript.life = playerScript.life < 0 ? 0 : playerScript.life;
+
+            if (canStun)
+            {
+                Debug.Log("here");
+                playerScript.StunPlayer(stunDuration);
+            }
+
             playerScript.TakeDamageEffect();
 
             Destroy(gameObject);
@@ -65,6 +87,28 @@ public class Bullet : MonoBehaviour
         if (col.gameObject.tag == "Blocker")
         {
             Instantiate(collideEffects, transform.position, Quaternion.identity);
+
+            if (gameObject.tag == "EnemyBullet" && isExploding)
+            {
+
+                Collider[] colliders = Physics.OverlapSphere(transform.position, explosionRadius);
+
+                foreach (var collider in colliders)
+                {
+                    if (collider.gameObject.tag == "Player")
+                    {
+                        var playerScript = collider.gameObject.GetComponent<PlayerController>();
+
+                        playerScript.life -= damage;
+                        playerScript.TakeDamageEffect();
+
+                        if (canStun)
+                        {
+                            playerScript.StunPlayer(stunDuration);
+                        }
+                    }
+                }
+            }
 
             Destroy(gameObject);
         }

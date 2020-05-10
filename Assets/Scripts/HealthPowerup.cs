@@ -18,7 +18,7 @@ public class HealthPowerup : MonoBehaviour
 
     void Update()
     {
-        transform.Rotate(0, 3f * Time.deltaTime, 0);
+        transform.Rotate(0, 2f, 0);
     }
 
 
