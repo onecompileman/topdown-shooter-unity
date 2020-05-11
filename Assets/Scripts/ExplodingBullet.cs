@@ -45,7 +45,9 @@ public class ExplodingBullet : MonoBehaviour
         bulletMaterial = GetComponent<MeshRenderer>().materials[0];
         originalColor = new Color(bulletMaterial.color.r, bulletMaterial.color.g, bulletMaterial.color.b);
         rb = GetComponent<Rigidbody>();
+        // Debug.Log(speed);
         rb.AddForce(velocity * speed * 400);
+        StartCoroutine("InvokeDestroyAfter", 7f);
 
     }
 
@@ -80,6 +82,12 @@ public class ExplodingBullet : MonoBehaviour
             enemyScript.life -= explodeDamage;
             enemyScript.TakeDamageEffect();
         }
+    }
+
+    private IEnumerator InvokeDestroyAfter(float afterTime)
+    {
+        yield return new WaitForSeconds(afterTime);
+        StartCoroutine("Explode");
     }
 
     private IEnumerator Explode()

@@ -44,7 +44,6 @@ public class Bullet : MonoBehaviour
     void OnTriggerEnter(Collider col)
     {
 
-        Debug.Log(col.gameObject.tag);
         if (col.gameObject.tag == "Enemy" && gameObject.tag == "PlayerBullet")
         {
             Instantiate(collideEffects, transform.position, Quaternion.identity);
@@ -74,7 +73,6 @@ public class Bullet : MonoBehaviour
 
             if (canStun)
             {
-                Debug.Log("here");
                 playerScript.StunPlayer(stunDuration);
             }
 

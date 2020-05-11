@@ -259,7 +259,7 @@ public class EnemyController : MonoBehaviour
 
                     bulletScript.velocity = bulletVelocity;
                     bulletScript.damage = damage;
-                    bulletScript.speed = bulletSpeed;
+                    bulletScript.speed = explodingBulletSpeed;
                     bulletScript.explodeDamage = explodingBulletDamage;
 
                     angleStart += angleIncrement;
@@ -344,8 +344,10 @@ public class EnemyController : MonoBehaviour
 
             // isDashing = false;
 
-            // Debug.Log(isDashing);
-            velocity = Vector3.zero;
+            // // Debug.Log(isDashing);
+            // velocity = Vector3.zero;
+
+            // Debug.Log("here");
 
             dashEffects.Stop();
         }

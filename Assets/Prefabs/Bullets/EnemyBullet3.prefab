@@ -231,8 +231,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3e512efccb275f44ac721cc31fe1abf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collideEffects: {fileID: 2959856700675844090, guid: bdb28310c0c4ec04988b177cc3f11cd0,
+  collideEffects: {fileID: 910372582520494017, guid: 3871ccede6a77434ebb1944911edaca8,
     type: 3}
+  isExploding: 0
+  explosionRadius: 0
+  canStun: 0
+  stunDuration: 0
   damage: 20
   speed: 30
   maxDistance: 30

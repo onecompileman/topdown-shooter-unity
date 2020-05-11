@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3334342096045315124}
   m_Layer: 8
   m_Name: IceFall
-  m_TagString: Blocker
+  m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

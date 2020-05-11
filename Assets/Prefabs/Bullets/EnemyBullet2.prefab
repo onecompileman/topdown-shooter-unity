@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2408800318013115522}
   - component: {fileID: 2408800318013115525}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -150,7 +150,7 @@ GameObject:
   - component: {fileID: 2408800318028303012}
   - component: {fileID: 8802450748579863143}
   - component: {fileID: 9118470429707396104}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyBullet2
   m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
@@ -231,8 +231,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3e512efccb275f44ac721cc31fe1abf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collideEffects: {fileID: 7277173892088811291, guid: f0abfe2c22821ce49a6f465f44b51790,
+  collideEffects: {fileID: 2632447594459299806, guid: 5237f4d2f505dda48ba559777c062486,
     type: 3}
+  isExploding: 0
+  explosionRadius: 0
+  canStun: 0
+  stunDuration: 0
   damage: 20
   speed: 30
   maxDistance: 30

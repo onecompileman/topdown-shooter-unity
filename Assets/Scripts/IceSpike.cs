@@ -23,6 +23,9 @@ public class IceSpike : MonoBehaviour
     [SerializeField]
     public MeshRenderer spike2;
 
+    [SerializeField]
+    public bool canStun = false;
+
     private AudioSource iceBreakSound;
 
     private Vector3 targetVector;
@@ -57,6 +60,11 @@ public class IceSpike : MonoBehaviour
 
             playerScript.life -= damage;
             playerScript.TakeDamageEffect();
+
+            if (canStun)
+            {
+                playerScript.StunPlayer(2.5f);
+            }
         }
     }
 
@@ -65,7 +73,7 @@ public class IceSpike : MonoBehaviour
         isDestroyed = true;
         yield return new WaitForSeconds(stayTime);
         Instantiate(explodeEffect, transform.position, Quaternion.identity);
-        iceBreakSound.volume = 0.15f;
+        iceBreakSound.volume = 0.1f;
         iceBreakSound.Play();
         spike1.enabled = false;
         spike2.enabled = false;

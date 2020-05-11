@@ -48,10 +48,13 @@ public class IceFall : MonoBehaviour
 
             playerScript.life -= damage;
             playerScript.TakeDamageEffect();
+            playerScript.Freeze(2f);
 
-            Instantiate(hitEffect, transform.position, Quaternion.identity);
-            Destroy(gameObject);
+
         }
+
+        Instantiate(hitEffect, transform.position, Quaternion.identity);
+        Destroy(gameObject);
 
     }
 }

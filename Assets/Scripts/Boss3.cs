@@ -34,7 +34,7 @@ public class Boss3 : EnemyController
 
     private AudioSource audioSource;
 
-    private int mode = 0;
+    private int mode = 1;
 
     private bool canIceSpike = false;
     private bool canIceFall = false;
@@ -61,14 +61,17 @@ public class Boss3 : EnemyController
         {
             case 0:
                 // canShoot = tuer;
-                canAttack = false;
+                // canAttack = false;
+                canShoot = false;
+                distanceToShoot = 15f;
                 if (canIceSpike)
                 {
                     StartCoroutine("IceSpike");
                 }
                 break;
             case 1:
-                // canShoot = false;
+                canShoot = true;
+                distanceToShoot = originalDistanceToShoot;
                 // canAttack = false;
                 if (canIceFall)
                 {
@@ -77,6 +80,7 @@ public class Boss3 : EnemyController
                 break;
             case 2:
                 canShoot = true;
+                distanceToShoot = originalDistanceToShoot;
                 break;
         }
     }
@@ -85,25 +89,26 @@ public class Boss3 : EnemyController
     {
         yield return new WaitForSeconds(3);
         canIceSpike = true;
+        canIceFall = true;
 
         while (true)
         {
             yield return new WaitForSeconds(changeModeTime);
             mode = Random.Range(0, 3);
-            if (mode == 2 || mode == 1)
-            {
-                canAttack = true;
-            }
-            else
-            {
-                canAttack = false;
-            }
+            // if (mode == 2 || mode == 1)
+            // {
+            //     canAttack = true;
+            // }
+            // else
+            // {
+            //     canAttack = false;
+            // }
 
-            if (mode == 1)
-            {
-                // canIceSpike = true;
-                canIceFall = true;
-            }
+            // if (mode == 1)
+            // {
+            //     // canIceSpike = true;
+            //     canIceFall = true;
+            // }
         }
     }
 

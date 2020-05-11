@@ -36,9 +36,9 @@ public class Boss1 : EnemyController
     [SerializeField]
     public AudioClip laserChargeSound;
 
-
     [SerializeField]
     public AudioClip laserBeamSound;
+
 
     private float originalDistanceToShoot;
 

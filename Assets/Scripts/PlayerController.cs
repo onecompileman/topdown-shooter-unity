@@ -30,7 +30,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     public GameObject stun;
 
+    [SerializeField]
+    public GameObject frozen;
+
     public bool isStunned = false;
+
+    public bool isFrozen = false;
 
     private Material playerSkin;
 
@@ -89,7 +94,7 @@ public class PlayerController : MonoBehaviour
 
         var movespeed = isRolling ? rollingSpeed : speed;
 
-        movespeed = isStunned ? 0 : movespeed;
+        movespeed = isStunned || isFrozen ? 0 : movespeed;
 
         // Debug.Log(velocity.magnitude * movespeed);
         animator.SetFloat(speedId, velocity.magnitude == 0 ? 0 : movespeed);
@@ -120,9 +125,34 @@ public class PlayerController : MonoBehaviour
         StartCoroutine("TakeLife");
     }
 
+    public void Freeze(float cooldown)
+    {
+        StartCoroutine("FreezePlayer", cooldown);
+    }
+
     public void StunPlayer(float cooldown)
     {
         StartCoroutine("StunPlayerEffect", cooldown);
+    }
+
+    IEnumerator FreezePlayer(float cooldown)
+    {
+        isFrozen = true;
+        frozen.SetActive(true);
+        frozen.transform.localScale = new Vector3(400, 400, 400);
+
+        var scale = 400;
+        float secondsToWait = 0.6f / 125;
+
+        for (int i = 0; i < 125; i++)
+        {
+            scale += 2;
+            frozen.transform.localScale = new Vector3(scale, scale, scale);
+            yield return new WaitForSeconds(secondsToWait);
+        }
+        yield return new WaitForSeconds(cooldown);
+        isFrozen = false;
+        frozen.SetActive(false);
     }
 
     private IEnumerator StunPlayerEffect(float cooldown)
