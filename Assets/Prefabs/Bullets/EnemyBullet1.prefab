@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5086326942531402641}
   - component: {fileID: 2149081333454908242}
   - component: {fileID: 1833199024977810749}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EnemyBullet1
   m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
@@ -96,6 +96,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collideEffects: {fileID: 7277173892088811291, guid: f0abfe2c22821ce49a6f465f44b51790,
     type: 3}
+  isExploding: 0
+  explosionRadius: 0
+  canStun: 0
+  stunDuration: 0
   damage: 20
   speed: 30
   maxDistance: 30
@@ -123,7 +127,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5086326942546591159}
   - component: {fileID: 5086326942546591152}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}

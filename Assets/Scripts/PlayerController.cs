@@ -33,6 +33,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     public GameObject frozen;
 
+    [SerializeField]
+    public float mana;
+
+    [SerializeField]
+    public float manaRegenTime;
     public bool isStunned = false;
 
     public bool isFrozen = false;
@@ -40,6 +45,10 @@ public class PlayerController : MonoBehaviour
     private Material playerSkin;
 
     private Color originalColor;
+
+    public float originalLife;
+
+    public float originalMana;
 
     private float rollCooldown = 0.4035f;
 
@@ -56,9 +65,13 @@ public class PlayerController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
+        originalLife = life;
+        originalMana = mana;
         playerSkin = meshRenderer.materials[2];
         originalColor = new Color { r = playerSkin.color.r, g = playerSkin.color.g, b = playerSkin.color.b };
         speedId = Animator.StringToHash("Speed");
+
+        StartCoroutine("RegenMana");
     }
 
     void Update()
@@ -119,9 +132,15 @@ public class PlayerController : MonoBehaviour
         StartCoroutine("TakeDamage");
     }
 
+    public void TakeMana(float m)
+    {
+        mana = Mathf.Clamp(mana + m, 0, originalMana);
+        StartCoroutine("TakeManaEffects");
+    }
+
     public void TakeLifeEffect(float l)
     {
-        life = Mathf.Clamp(life + l, 0, 100);
+        life = Mathf.Clamp(life + l, 0, originalLife);
         StartCoroutine("TakeLife");
     }
 
@@ -133,6 +152,22 @@ public class PlayerController : MonoBehaviour
     public void StunPlayer(float cooldown)
     {
         StartCoroutine("StunPlayerEffect", cooldown);
+    }
+
+    IEnumerator TakeManaEffects()
+    {
+        playerSkin.color = new Color(0.08f, 1, 1);
+        yield return new WaitForSeconds(0.2f);
+        playerSkin.color = originalColor;
+    }
+
+    IEnumerator RegenMana()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(manaRegenTime);
+            mana = Mathf.Clamp(mana + 1, 0, originalMana);
+        }
     }
 
     IEnumerator FreezePlayer(float cooldown)

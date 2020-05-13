@@ -1,5 +1,4 @@
 
-using System;
 using System.Collections;
 using UnityEngine;
 
@@ -38,9 +37,31 @@ public class BaseWeapon : MonoBehaviour
     public CameraFollow camera;
 
     [SerializeField]
+    public float manaCost = 1;
+
+    [SerializeField]
     public PlayerController player;
 
+    [SerializeField]
+    public float angleFire;
+
+    [SerializeField]
+    public bool isRandomAngle = false;
+
+    [SerializeField]
+    public bool isExplodingBullet = false;
+
+    [SerializeField]
+    public bool isWaveBullet = false;
+
+    [SerializeField]
+    public GameObject explodingBullet;
+
+    [SerializeField]
     private bool canFire = true;
+
+    [SerializeField]
+    public float dampAngle;
 
     private bool isFiring = false;
     [SerializeField]
@@ -60,11 +81,11 @@ public class BaseWeapon : MonoBehaviour
         {
             if (isMobile)
             {
-                if ((Math.Abs(shootJoystick.Vertical) > 0.25 || Math.Abs(shootJoystick.Horizontal) > 0.25))
+                if ((Mathf.Abs(shootJoystick.Vertical) > 0.25 || Mathf.Abs(shootJoystick.Horizontal) > 0.25))
                 {
                     isFiring = true;
                     camera.xOffset = shootJoystick.Horizontal * 7;
-                    camera.yOffset = shootJoystick.Vertical * 7;
+                    camera.yOffset = shootJoystick.Vertical * 5.5f;
                 }
                 else
                 {
@@ -86,39 +107,105 @@ public class BaseWeapon : MonoBehaviour
                 }
             }
 
-            if (isFiring && canFire)
+            if (isFiring && canFire && player.mana >= manaCost)
             {
-
+                player.mana -= manaCost;
                 animator.Play("Attack");
                 shootSound.Play();
                 StartCoroutine("FireCooldown");
                 muzzle.Play();
 
-                if (bulletsToFire == 1)
+                if (isExplodingBullet)
                 {
-
-                    var bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-                    var bulletScript = bullet.GetComponent<Bullet>();
+                    var bullet = Instantiate(explodingBullet, transform.position, Quaternion.identity);
+                    var bulletScript = bullet.GetComponent<ExplodingBullet>();
 
                     bulletScript.velocity = transform.forward;
                     bulletScript.damage = bulletDamage;
                     bulletScript.speed = bulletSpeed;
-                    bulletScript.maxDistance = bulletMaxDistance;
                 }
                 else
                 {
-                    for (int i = 0; i < bulletsToFire; i++)
+
+                    if (bulletsToFire == 1)
                     {
-                        // Velocity to damp
-                        var dampVelocity = new Vector3(UnityEngine.Random.Range(-0.25f, 0.25f), 0, UnityEngine.Random.Range(-0.15f, 0.15f));
+                        Vector3 velocity;
+                        if (isRandomAngle)
+                        {
+                            var angle = Mathf.Atan2(transform.forward.z, transform.forward.x) * Mathf.Rad2Deg;
+                            angle = (angle + Random.Range(-dampAngle, dampAngle)) * Mathf.Deg2Rad;
+                            velocity = new Vector3(Mathf.Cos(angle), 0, Mathf.Sin(angle));
+                        }
+                        else
+                        {
+                            velocity = transform.forward;
+                        }
+
+                        Debug.Log(velocity);
 
                         var bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-                        var bulletScript = bullet.GetComponent<Bullet>();
 
-                        bulletScript.velocity = transform.forward + dampVelocity;
-                        bulletScript.damage = bulletDamage;
-                        bulletScript.speed = bulletSpeed;
-                        bulletScript.maxDistance = bulletMaxDistance;
+                        if (isWaveBullet)
+                        {
+                            var bulletScript = bullet.GetComponent<WaveBullet>();
+
+                            bulletScript.velocity = velocity;
+                            bulletScript.damage = bulletDamage;
+                            bulletScript.speed = bulletSpeed;
+                            bulletScript.maxDistance = bulletMaxDistance;
+                        }
+                        else
+                        {
+                            var bulletScript = bullet.GetComponent<Bullet>();
+
+                            bulletScript.velocity = velocity;
+                            bulletScript.damage = bulletDamage;
+                            bulletScript.speed = bulletSpeed;
+                            bulletScript.maxDistance = bulletMaxDistance;
+                        }
+
+                    }
+                    else
+                    {
+                        if (isRandomAngle)
+                        {
+                            for (int i = 0; i < bulletsToFire; i++)
+                            {
+                                // Velocity to damp
+                                var dampVelocity = new Vector3(UnityEngine.Random.Range(-0.25f, 0.25f), 0, UnityEngine.Random.Range(-0.15f, 0.15f));
+
+                                var bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+                                var bulletScript = bullet.GetComponent<Bullet>();
+
+                                bulletScript.velocity = transform.forward + dampVelocity;
+                                bulletScript.damage = bulletDamage;
+                                bulletScript.speed = bulletSpeed;
+                                bulletScript.maxDistance = bulletMaxDistance;
+                            }
+                        }
+                        else
+                        {
+                            var startingAngle = transform.rotation.y - (angleFire / 2);
+                            var incrementAngle = angleFire / bulletsToFire;
+
+                            for (int i = 0; i < bulletsToFire; i++)
+                            {
+
+                                var radAngle = startingAngle * Mathf.Deg2Rad;
+                                // Velocity to damp
+                                var velocity = new Vector3(Mathf.Cos(startingAngle), 0, Mathf.Sin(startingAngle));
+
+                                var bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+                                var bulletScript = bullet.GetComponent<Bullet>();
+
+                                bulletScript.velocity = velocity;
+                                bulletScript.damage = bulletDamage;
+                                bulletScript.speed = bulletSpeed;
+                                bulletScript.maxDistance = bulletMaxDistance;
+
+                                startingAngle += incrementAngle;
+                            }
+                        }
                     }
                 }
             }

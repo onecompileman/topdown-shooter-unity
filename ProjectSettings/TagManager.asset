@@ -10,6 +10,7 @@ TagManager:
   - Blocker
   - EnemyLaser
   - Ground
+  - Mine
   layers:
   - Default
   - TransparentFX

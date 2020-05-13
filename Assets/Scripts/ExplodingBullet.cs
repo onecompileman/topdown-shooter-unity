@@ -125,7 +125,7 @@ public class ExplodingBullet : MonoBehaviour
                 playerScript.life -= explodeDamage;
                 playerScript.TakeDamageEffect();
 
-                collider.gameObject.GetComponent<Rigidbody>().AddExplosionForce(3000000, transform.position, explodeRadius);
+                collider.gameObject.GetComponent<Rigidbody>().AddExplosionForce(30000, transform.position, explodeRadius);
 
             }
         }

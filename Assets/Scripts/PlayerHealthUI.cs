@@ -1,26 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
-
 public class PlayerHealthUI : MonoBehaviour
 {
     [SerializeField]
     public PlayerController player;
 
+    [SerializeField]
+    public Text lifeText;
     private RectTransform health;
-    private float playerHealth;
 
     void Start()
     {
         health = GetComponent<RectTransform>();
-        playerHealth = player.life;
     }
 
     // Update is called once per frame
     void Update()
     {
-        var width = (player.life / playerHealth) * 220;
-        health.sizeDelta = new Vector2(width, 15);
+        var width = (player.life / player.originalLife) * 220;
+        health.sizeDelta = new Vector2(width, 20);
         health.localPosition = new Vector3(-((220 - width) / 2), 0, 0);
+        lifeText.text = $@"{player.life}/{player.originalLife}";
     }
 }

@@ -110,6 +110,26 @@ public class EnemyController : MonoBehaviour
     [SerializeField]
     public float explodingBulletSpeed;
 
+    [SerializeField]
+    public bool canBeStunned = false;
+
+    [SerializeField]
+    public GameObject stun;
+
+    [SerializeField]
+    public GameObject mana;
+
+    [SerializeField]
+    public float manaToAdd = 10;
+
+    [SerializeField]
+    public int minMana = 0;
+
+    [SerializeField]
+    public int maxMana = 1;
+
+    private bool isStunned = false;
+
     private float angleFire;
 
     public bool isDashing = false;
@@ -119,6 +139,7 @@ public class EnemyController : MonoBehaviour
     public Material enemySkin;
 
     public bool isExploding = false;
+
 
     private Vector3 velocity;
 
@@ -143,7 +164,7 @@ public class EnemyController : MonoBehaviour
             OnDeath();
         }
 
-        if (!isDashing)
+        if (!isDashing && !isStunned)
         {
             Follow();
         }
@@ -159,12 +180,14 @@ public class EnemyController : MonoBehaviour
 
         enemySpeed = isExploding ? 0 : enemySpeed;
 
+        enemySpeed = isStunned ? 0 : enemySpeed;
+
         animator.SetFloat(speedId, velocity.magnitude * enemySpeed);
 
         transform.Translate(velocity * enemySpeed * Time.deltaTime);
 
 
-        if (canShoot && canAttack)
+        if (canShoot && canAttack && !isStunned)
         {
             if (Vector3.Distance(follow.position, transform.position) <= distanceToShoot)
             {
@@ -192,6 +215,11 @@ public class EnemyController : MonoBehaviour
             healthObject.GetComponent<HealthPowerup>().lifeToAdd = lifeToAdd;
         }
 
+        if (mana)
+        {
+            AddMana();
+        }
+
         Destroy(gameObject);
     }
 
@@ -200,6 +228,39 @@ public class EnemyController : MonoBehaviour
         StartCoroutine("TakeDamage");
     }
 
+    public void StunEnemy(float stunDuration)
+    {
+        if (canBeStunned)
+        {
+            StartCoroutine("StunEffects", stunDuration);
+        }
+    }
+
+    private IEnumerator StunEffects(float stunDuration)
+    {
+        isStunned = true;
+        stun.SetActive(true);
+        yield return new WaitForSeconds(stunDuration);
+        isStunned = false;
+        stun.SetActive(false);
+    }
+
+    private void AddMana()
+    {
+        int manaToGenerate = Random.Range(minMana, maxMana + 1);
+
+        for (int i = 0; i <= manaToGenerate; i++)
+        {
+            var force = 30;
+            var forceVector = new Vector3(Random.Range(-1f, 1f), 0.5f, Random.Range(-1f, 1f)) * force;
+            var dampPosition = new Vector3(Random.Range(-0.6f, 0.6f), Random.Range(-0.6f, 0.6f), Random.Range(-0.6f, 0.6f));
+
+            var manaObj = Instantiate(mana, transform.position + dampPosition, Quaternion.identity);
+            var manaRb = manaObj.GetComponent<Rigidbody>();
+
+            manaRb.AddForce(forceVector);
+        }
+    }
     private IEnumerator Dash()
     {
         yield return new WaitForSeconds(dashLookTime);
