@@ -30,10 +30,15 @@ public class Bullet : MonoBehaviour
 
     private float distanceTravelled = 0;
 
+
     void Update()
     {
+        transform.rotation = Quaternion.Euler(0, -Mathf.Atan2(velocity.z, velocity.x) * Mathf.Rad2Deg + 90, 0);
+        // Debug.Log(-Mathf.Atan2(velocity.z, velocity.x) * Mathf.Rad2Deg + 90);
 
-        transform.Translate(velocity * speed * Time.deltaTime);
+
+        transform.position = Vector3.Lerp(transform.position, transform.position + (velocity * speed), Time.deltaTime);
+        // transform.Translate(velocity * speed * Time.deltaTime);
         distanceTravelled += speed * Time.deltaTime;
         if (distanceTravelled >= maxDistance)
         {
@@ -96,7 +101,7 @@ public class Bullet : MonoBehaviour
                 }
             }
 
-            var oppositeForce = gameObject.transform.forward.normalized * -1 * 0.2f;
+            var oppositeForce = gameObject.transform.forward.normalized * 0.2f;
 
 
             col.gameObject.transform.Translate(oppositeForce);

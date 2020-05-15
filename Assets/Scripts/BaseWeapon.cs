@@ -67,6 +67,10 @@ public class BaseWeapon : MonoBehaviour
     [SerializeField]
     public Animator animator;
 
+    [SerializeField]
+    public AutoFire autoFire;
+
+
     private int attackId;
 
     public void Start()
@@ -107,7 +111,40 @@ public class BaseWeapon : MonoBehaviour
                 }
             }
 
-            if (isFiring && canFire && player.mana >= manaCost)
+            if (autoFire.isFiring)
+            {
+                isFiring = true;
+                var enemies = GameObject.FindGameObjectsWithTag("Enemy");
+                GameObject nearestEnemy = null;
+
+                foreach (var enemy in enemies)
+                {
+                    if (nearestEnemy == null)
+                    {
+                        nearestEnemy = enemy;
+                    }
+                    else
+                    {
+                        var distanceToPlayerA = Vector3.Distance(nearestEnemy.transform.position, player.transform.position);
+                        var distanceToPlayerB = Vector3.Distance(enemy.transform.position, player.transform.position);
+                        if (distanceToPlayerB < distanceToPlayerA)
+                        {
+                            nearestEnemy = enemy;
+                        }
+                    }
+                }
+
+                var targetVector = nearestEnemy.transform.position - player.transform.position;
+                targetVector.Normalize();
+
+                camera.xOffset = targetVector.x * 7;
+                camera.yOffset = targetVector.z * 5.5f;
+
+                player.transform.rotation = Quaternion.Euler(0, -Mathf.Atan2(targetVector.z, targetVector.x) * Mathf.Rad2Deg + 90, 0);
+
+            }
+
+            if (isFiring && canFire && player.mana >= manaCost && player.hasFullyRotated)
             {
                 player.mana -= manaCost;
                 animator.Play("Attack");
@@ -185,15 +222,15 @@ public class BaseWeapon : MonoBehaviour
                         }
                         else
                         {
-                            var startingAngle = transform.rotation.y - (angleFire / 2);
-                            var incrementAngle = angleFire / bulletsToFire;
+                            var startingAngle = (Mathf.Atan2(transform.forward.z, transform.forward.x) * Mathf.Rad2Deg) - (angleFire / 2);
+                            var incrementAngle = angleFire / bulletsToFire - 1;
 
                             for (int i = 0; i < bulletsToFire; i++)
                             {
 
                                 var radAngle = startingAngle * Mathf.Deg2Rad;
                                 // Velocity to damp
-                                var velocity = new Vector3(Mathf.Cos(startingAngle), 0, Mathf.Sin(startingAngle));
+                                var velocity = new Vector3(Mathf.Cos(radAngle), 0, Mathf.Sin(radAngle));
 
                                 var bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
                                 var bulletScript = bullet.GetComponent<Bullet>();

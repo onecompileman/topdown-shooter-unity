@@ -262,7 +262,7 @@ MonoBehaviour:
   follow: {fileID: 0}
   distanceToShoot: 25
   canShoot: 0
-  attackCooldown: 0.5
+  attackCooldown: 0.6
   meshRenderer: {fileID: 4640549675823727573}
   deathEffects: {fileID: 5405686948634158821, guid: 58a950893dbebea4286c10326497571c,
     type: 3}
@@ -295,6 +295,10 @@ MonoBehaviour:
   explodingBulletSpeed: 0
   canBeStunned: 0
   stun: {fileID: 0}
+  mana: {fileID: 2162987489089638295, guid: ec90ab3605b41ee46a4a6423910c08cc, type: 3}
+  manaToAdd: 10
+  minMana: 0
+  maxMana: 10
   isDashing: 0
   animator: {fileID: 0}
   enemySkin: {fileID: 0}

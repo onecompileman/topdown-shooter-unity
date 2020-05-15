@@ -50,9 +50,13 @@ public class PlayerController : MonoBehaviour
 
     public float originalMana;
 
+    public Quaternion rotationToFollow;
+
+    public bool hasFullyRotated = true;
     private float rollCooldown = 0.4035f;
 
     private bool isRolling = false;
+
 
     private Vector3 velocity = Vector3.zero;
 
@@ -90,6 +94,7 @@ public class PlayerController : MonoBehaviour
         if (velocity.magnitude > 0)
         {
             angle = Mathf.Atan2(yVel, xVel) * Mathf.Rad2Deg;
+            rotationToFollow = Quaternion.Euler(new Vector3(0, (-angle + 90), 0));
             transform.rotation = Quaternion.Euler(new Vector3(0, (-angle + 90), 0));
         }
         if (!isRolling && Math.Abs(shootJoystick.Vertical) > 0.2 || Math.Abs(shootJoystick.Horizontal) > 0.2)
@@ -103,6 +108,7 @@ public class PlayerController : MonoBehaviour
 
             angle = Mathf.Atan2(isMobile ? shootJoystick.Vertical : mousePos.y, isMobile ? shootJoystick.Horizontal : mousePos.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(new Vector3(0, (-angle + 90), 0));
+
         }
 
         var movespeed = isRolling ? rollingSpeed : speed;
@@ -118,6 +124,10 @@ public class PlayerController : MonoBehaviour
         {
             animator.Play("Roll");
         }
+
+        // transform.rotation = Quaternion.Slerp(transform.rotation, rotationToFollow, Time.deltaTime * 5f);
+
+        // hasFullyRotated = (Vector3.Distance(rotationToFollow.eulerAngles, transform.rotation.eulerAngles) < 0.1f);
 
         transform.position = Vector3.Lerp(transform.position, transform.position + (vel * movespeed), Time.deltaTime);
     }

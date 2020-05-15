@@ -5647,7 +5647,7 @@ MonoBehaviour:
   speed: 4.8
   damage: 15
   follow: {fileID: 0}
-  distanceToShoot: 22
+  distanceToShoot: 25
   canShoot: 1
   attackCooldown: 1
   meshRenderer: {fileID: 2769992019549186398}
@@ -5656,7 +5656,7 @@ MonoBehaviour:
   bulletPoint: {fileID: 2290177525464981066}
   muzzle: {fileID: 2290177524700600367}
   bullet: {fileID: 6797720050601184775, guid: 4ce66ffce5cf2ee4a9eebfb4511dd147, type: 3}
-  bulletSpeed: 15
+  bulletSpeed: 12
   bulletMaxDistance: 40
   bulletsToFire: 5
   bulletAngle: 120
@@ -5669,7 +5669,7 @@ MonoBehaviour:
   dashCooldownTime: 0
   mainSkinIndex: 0
   lookSpeed: 2.5
-  canAttack: 0
+  canAttack: 1
   originalLife: 1000
   canDash: 0
   dashForward: 0
@@ -5680,6 +5680,12 @@ MonoBehaviour:
   explodingBullet: {fileID: 0}
   explodingBulletDamage: 0
   explodingBulletSpeed: 0
+  canBeStunned: 0
+  stun: {fileID: 0}
+  mana: {fileID: 0}
+  manaToAdd: 10
+  minMana: 0
+  maxMana: 1
   isDashing: 0
   animator: {fileID: 0}
   enemySkin: {fileID: 0}
@@ -5690,9 +5696,9 @@ MonoBehaviour:
   iceFall: {fileID: 6729533902666779961, guid: b138eaad05f31aa4fa74f08f46ab35e2, type: 3}
   iceSpikeInterval: 0.07
   iceSpikeLength: 25
-  iceSpikeCooldown: 4
-  iceFallCooldown: 1.5
-  changeModeTime: 12
+  iceSpikeCooldown: 6
+  iceFallCooldown: 2
+  changeModeTime: 7
   iceSpikeDistance: 3
   iceSpikeSound: {fileID: 8300000, guid: 19613589197a2b943be619933fa91865, type: 3}
 --- !u!54 &2290177524504518367

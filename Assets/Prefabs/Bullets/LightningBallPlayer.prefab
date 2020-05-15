@@ -14149,7 +14149,6 @@ GameObject:
   - component: {fileID: 531258699071452782}
   - component: {fileID: 531258699051532444}
   - component: {fileID: 531258699051653545}
-  - component: {fileID: 4461589130080543763}
   m_Layer: 9
   m_Name: LightningBallPlayer
   m_TagString: PlayerBullet
@@ -18918,7 +18917,7 @@ MonoBehaviour:
   stunDuration: 2
   damage: 20
   speed: 30
-  maxDistance: 30
+  maxDistance: 50
   velocity: {x: 0, y: 0, z: 0}
 --- !u!65 &531258699051653545
 BoxCollider:
@@ -18933,28 +18932,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6, y: 6, z: 6}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4461589130080543763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 531258699051653544}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3e512efccb275f44ac721cc31fe1abf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collideEffects: {fileID: 3430263159126759764, guid: 124b13c00af815642881066e89951fc0,
-    type: 3}
-  isExploding: 1
-  explosionRadius: 3
-  canStun: 1
-  stunDuration: 3
-  damage: 20
-  speed: 30
-  maxDistance: 30
-  velocity: {x: 0, y: 0, z: 0}
 --- !u!1 &531258699051658922
 GameObject:
   m_ObjectHideFlags: 0

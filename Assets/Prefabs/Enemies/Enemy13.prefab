@@ -326,6 +326,12 @@ MonoBehaviour:
   explodingBullet: {fileID: 0}
   explodingBulletDamage: 0
   explodingBulletSpeed: 0
+  canBeStunned: 0
+  stun: {fileID: 0}
+  mana: {fileID: 2162987489089638295, guid: ec90ab3605b41ee46a4a6423910c08cc, type: 3}
+  manaToAdd: 10
+  minMana: 0
+  maxMana: 3
   isDashing: 0
   animator: {fileID: 0}
   enemySkin: {fileID: 0}
@@ -333,7 +339,7 @@ MonoBehaviour:
   originalColor: {r: 0, g: 0, b: 0, a: 0}
   flameThrowerDamage: 2
   flameThrowerDuration: 7
-  changeModeTime: 18
+  changeModeTime: 7
   flameThrowerCooldown: 4
   flameThrower: {fileID: 7049835281207818396}
   flameThrowerSound: {fileID: 8300000, guid: 6076d0a99f0005847b5491905a6b075e, type: 3}

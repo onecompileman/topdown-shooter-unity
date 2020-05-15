@@ -271,7 +271,7 @@ MonoBehaviour:
   muzzle: {fileID: 5894321622437650926}
   bullet: {fileID: 2408800318028303010, guid: bdaada943733dcc4bb2590393d1d84c3, type: 3}
   bulletSpeed: 12
-  bulletMaxDistance: 40
+  bulletMaxDistance: 50
   bulletsToFire: 5
   bulletAngle: 360
   dashLookTime: 2.5
@@ -295,6 +295,12 @@ MonoBehaviour:
     type: 3}
   explodingBulletDamage: 30
   explodingBulletSpeed: 27
+  canBeStunned: 0
+  stun: {fileID: 0}
+  mana: {fileID: 0}
+  manaToAdd: 10
+  minMana: 0
+  maxMana: 1
   isDashing: 0
   animator: {fileID: 0}
   enemySkin: {fileID: 0}
@@ -310,7 +316,7 @@ MonoBehaviour:
   iceSpikeCooldown: 5
   iceSpikeInterval: 0.07
   noOfIceSpikes: 3
-  iceSpikeAngle: 120
+  iceSpikeAngle: 90
   iceSpikeLength: 25
   iceSpikeDistanceToShoot: 15
 --- !u!54 &5894321622829984599

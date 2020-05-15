@@ -6049,7 +6049,7 @@ MonoBehaviour:
   damage: 10
   follow: {fileID: 0}
   distanceToShoot: 10
-  canShoot: 1
+  canShoot: 0
   attackCooldown: 2
   meshRenderer: {fileID: 1119602958909069140}
   deathEffects: {fileID: 6407291813985154411, guid: e102ac2a5d68c66408f4132a946ee26a,
@@ -6057,7 +6057,7 @@ MonoBehaviour:
   bulletPoint: {fileID: 3274859790594200135}
   muzzle: {fileID: 3274859789058980096}
   bullet: {fileID: 5086326942531402647, guid: 1e4cbe6dae999da499844e0c1029c751, type: 3}
-  bulletSpeed: 25
+  bulletSpeed: 12
   bulletMaxDistance: 40
   bulletsToFire: 1
   bulletAngle: 45

@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotateSpeed: 1
+  rotateCoords: y
 --- !u!1 &438679766
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,6 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotateSpeed: 1
+  rotateCoords: y
 --- !u!1 &481092706
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,6 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotateSpeed: 3
+  rotateCoords: y
 --- !u!1 &903260879
 GameObject:
   m_ObjectHideFlags: 0
@@ -862,7 +865,7 @@ MonoBehaviour:
   follow: {fileID: 0}
   distanceToShoot: 25
   canShoot: 1
-  attackCooldown: 0.3
+  attackCooldown: 0.4
   meshRenderer: {fileID: 2661400117000007344}
   deathEffects: {fileID: 8030339485369943463, guid: 1fe10deaef85f9f43823874cbf401d05,
     type: 3}
@@ -895,6 +898,10 @@ MonoBehaviour:
   explodingBulletSpeed: 0
   canBeStunned: 1
   stun: {fileID: 642721938}
+  mana: {fileID: 2162987489089638295, guid: ec90ab3605b41ee46a4a6423910c08cc, type: 3}
+  manaToAdd: 10
+  minMana: 0
+  maxMana: 5
   isDashing: 0
   animator: {fileID: 0}
   enemySkin: {fileID: 0}
