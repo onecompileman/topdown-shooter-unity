@@ -11,6 +11,8 @@ TagManager:
   - EnemyLaser
   - Ground
   - Mine
+  - Chest
+  - FloorGem
   layers:
   - Default
   - TransparentFX

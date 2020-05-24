@@ -60,6 +60,20 @@ public class Bullet : MonoBehaviour
             mine.life -= damage;
             mine.TakeDamage();
 
+            Destroy(gameObject);
+
+        }
+        if (col.gameObject.tag == "FloorGem" && gameObject.tag == "PlayerBullet")
+        {
+            Instantiate(collideEffects, transform.position, Quaternion.identity);
+
+            // Apply damage 
+            var mine = col.GetComponent<FloorGem>();
+
+            mine.life -= damage;
+            mine.TakeDamage();
+
+            Destroy(gameObject);
 
         }
         else if (col.gameObject.tag == "Enemy" && gameObject.tag == "PlayerBullet")
@@ -101,10 +115,14 @@ public class Bullet : MonoBehaviour
                 }
             }
 
-            var oppositeForce = gameObject.transform.forward.normalized * 0.2f;
+            // var oppositeForce = gameObject.transform.forward.normalized * 0.2f;
 
 
-            col.gameObject.transform.Translate(oppositeForce);
+            // col.gameObject.transform.Translate(oppositeForce);
+
+            var oppositeForce = velocity.normalized * 10000f;
+
+            col.gameObject.GetComponent<Rigidbody>().AddForce(oppositeForce);
 
             Destroy(gameObject);
 

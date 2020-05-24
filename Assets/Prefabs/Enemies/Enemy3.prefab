@@ -6170,7 +6170,7 @@ MonoBehaviour:
   follow: {fileID: 0}
   distanceToShoot: 20
   canShoot: 1
-  attackCooldown: 1
+  attackCooldown: 1.5
   meshRenderer: {fileID: 8060653280484823904}
   deathEffects: {fileID: 6923068290974403995, guid: 5ce3e056959ef7242af3b3880258b9b2,
     type: 3}

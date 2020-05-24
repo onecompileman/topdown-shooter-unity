@@ -134,14 +134,16 @@ public class BaseWeapon : MonoBehaviour
                     }
                 }
 
-                var targetVector = nearestEnemy.transform.position - player.transform.position;
-                targetVector.Normalize();
+                if (nearestEnemy)
+                {
+                    var targetVector = nearestEnemy.transform.position - player.transform.position;
+                    targetVector.Normalize();
 
-                camera.xOffset = targetVector.x * 7;
-                camera.yOffset = targetVector.z * 5.5f;
+                    camera.xOffset = targetVector.x * 3;
+                    camera.yOffset = targetVector.z * 1.5f;
 
-                player.transform.rotation = Quaternion.Euler(0, -Mathf.Atan2(targetVector.z, targetVector.x) * Mathf.Rad2Deg + 90, 0);
-
+                    player.transform.rotation = Quaternion.Euler(0, -Mathf.Atan2(targetVector.z, targetVector.x) * Mathf.Rad2Deg + 90, 0);
+                }
             }
 
             if (isFiring && canFire && player.mana >= manaCost && player.hasFullyRotated)
@@ -177,8 +179,6 @@ public class BaseWeapon : MonoBehaviour
                         {
                             velocity = transform.forward;
                         }
-
-                        Debug.Log(velocity);
 
                         var bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
 

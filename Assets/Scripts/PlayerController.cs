@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -38,6 +39,10 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField]
     public float manaRegenTime;
+
+    [SerializeField]
+    public bool isLobbyMode;
+
     public bool isStunned = false;
 
     public bool isFrozen = false;
@@ -53,6 +58,10 @@ public class PlayerController : MonoBehaviour
     public Quaternion rotationToFollow;
 
     public bool hasFullyRotated = true;
+
+    public int gems = 0;
+
+    public int coins = 0;
     private float rollCooldown = 0.4035f;
 
     private bool isRolling = false;
@@ -97,18 +106,21 @@ public class PlayerController : MonoBehaviour
             rotationToFollow = Quaternion.Euler(new Vector3(0, (-angle + 90), 0));
             transform.rotation = Quaternion.Euler(new Vector3(0, (-angle + 90), 0));
         }
-        if (!isRolling && Math.Abs(shootJoystick.Vertical) > 0.2 || Math.Abs(shootJoystick.Horizontal) > 0.2)
+        if (shootJoystick != null)
         {
-            Vector3 mousePos = Input.mousePosition;
-            mousePos.z = 5.23f;
+            if (!isRolling && Math.Abs(shootJoystick.Vertical) > 0.2 || Math.Abs(shootJoystick.Horizontal) > 0.2)
+            {
+                Vector3 mousePos = Input.mousePosition;
+                mousePos.z = 5.23f;
 
-            Vector3 objectPos = Camera.main.WorldToScreenPoint(transform.position);
-            mousePos.x = mousePos.x - objectPos.x;
-            mousePos.y = mousePos.y - objectPos.y;
+                Vector3 objectPos = Camera.main.WorldToScreenPoint(transform.position);
+                mousePos.x = mousePos.x - objectPos.x;
+                mousePos.y = mousePos.y - objectPos.y;
 
-            angle = Mathf.Atan2(isMobile ? shootJoystick.Vertical : mousePos.y, isMobile ? shootJoystick.Horizontal : mousePos.x) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.Euler(new Vector3(0, (-angle + 90), 0));
+                angle = Mathf.Atan2(isMobile ? shootJoystick.Vertical : mousePos.y, isMobile ? shootJoystick.Horizontal : mousePos.x) * Mathf.Rad2Deg;
+                transform.rotation = Quaternion.Euler(new Vector3(0, (-angle + 90), 0));
 
+            }
         }
 
         var movespeed = isRolling ? rollingSpeed : speed;

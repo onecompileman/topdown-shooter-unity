@@ -128,6 +128,13 @@ public class EnemyController : MonoBehaviour
     [SerializeField]
     public int maxMana = 1;
 
+    [HideInInspector]
+    public int enemyRoomIndex;
+
+    public delegate void OnDeathDelegate(int enemyIndex);
+
+    public event OnDeathDelegate onDeathDelegate;
+
     private bool isStunned = false;
 
     private float angleFire;
@@ -155,6 +162,7 @@ public class EnemyController : MonoBehaviour
         originalLife = life;
         velocity = new Vector3(0, 0, 0);
         speedId = Animator.StringToHash("Speed");
+        follow = GameObject.Find("Player").transform;
     }
     void Update()
     {
@@ -219,6 +227,8 @@ public class EnemyController : MonoBehaviour
         {
             AddMana();
         }
+
+        onDeathDelegate(enemyRoomIndex);
 
         Destroy(gameObject);
     }

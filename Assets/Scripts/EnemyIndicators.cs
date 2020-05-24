@@ -24,11 +24,13 @@ public class EnemyIndicators : MonoBehaviour
 
         var enemies = GameObject.FindGameObjectsWithTag("Enemy").Where(enemy => !IsTargetVisible(camera, enemy)).ToList();
 
+        var usedIndicatorIndex = 0;
+
         for (int i = 0; i < enemies.Count(); i++)
         {
-            if (i <= enemyIndicators.Count() - 1)
+            if (usedIndicatorIndex <= enemyIndicators.Count() - 1)
             {
-                var indicator = enemyIndicators.ElementAt(i);
+                var indicator = enemyIndicators.ElementAt(usedIndicatorIndex++);
 
                 indicator.SetActive(true);
 
@@ -36,6 +38,43 @@ public class EnemyIndicators : MonoBehaviour
                 indicator.transform.rotation = Quaternion.Euler(0, -Mathf.Atan2(targetVector.z, targetVector.x) * Mathf.Rad2Deg + 90, 0);
             }
         }
+        if (usedIndicatorIndex <= enemyIndicators.Count() - 1)
+        {
+
+            var floorGems = GameObject.Find("FloorGem (clone)");
+            if (floorGems != null)
+            {
+                var indicator = enemyIndicators.ElementAt(usedIndicatorIndex++);
+
+                indicator.SetActive(true);
+                var targetVector = floorGems.transform.position - player.transform.position;
+                indicator.transform.rotation = Quaternion.Euler(new Vector3(0, -Mathf.Atan2(targetVector.z, targetVector.x) * Mathf.Rad2Deg + 90, 0));
+            }
+        }
+
+        if (usedIndicatorIndex <= enemyIndicators.Count() - 1)
+        {
+
+            var chests = GameObject.FindGameObjectsWithTag("Chest").Where(chest => !chest.GetComponent<Chest>().opened && !IsTargetVisible(camera, chest));
+
+            foreach (var chest in chests)
+            {
+                {
+                    if (usedIndicatorIndex <= enemyIndicators.Count() - 1)
+                    {
+                        var indicator = enemyIndicators.ElementAt(usedIndicatorIndex++);
+
+                        indicator.SetActive(true);
+
+                        var targetVector = chest.transform.position - player.transform.position;
+                        indicator.transform.rotation = Quaternion.Euler(0, -Mathf.Atan2(targetVector.z, targetVector.x) * Mathf.Rad2Deg + 90, 0);
+                    }
+                }
+            }
+        }
+
+
+
 
     }
 

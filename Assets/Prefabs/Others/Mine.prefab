@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 6751785178201602860}
   - component: {fileID: 6751785178201602867}
   - component: {fileID: 6751785178201602866}
+  - component: {fileID: 4804711723077986265}
   m_Layer: 12
   m_Name: Mine
-  m_TagString: Blocker
+  m_TagString: Mine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82,6 +83,20 @@ MonoBehaviour:
   explodeRadius: 8
   life: 40
   mineDamage: 100
+--- !u!114 &4804711723077986265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6751785178201602864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1834c3b31f03534e944b469c3e4f8ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 1
+  rotateCoords: y
 --- !u!1001 &5141575525273964367
 PrefabInstance:
   m_ObjectHideFlags: 0

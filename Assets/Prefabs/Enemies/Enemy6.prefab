@@ -5380,9 +5380,9 @@ GameObject:
   - component: {fileID: 4236388199078159635}
   - component: {fileID: 4236388199078159663}
   - component: {fileID: 4236388199078159661}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Enemy6
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5504,6 +5504,12 @@ MonoBehaviour:
   explodingBullet: {fileID: 0}
   explodingBulletDamage: 0
   explodingBulletSpeed: 0
+  canBeStunned: 0
+  stun: {fileID: 0}
+  mana: {fileID: 0}
+  manaToAdd: 10
+  minMana: 0
+  maxMana: 1
   isDashing: 0
   animator: {fileID: 0}
   enemySkin: {fileID: 0}

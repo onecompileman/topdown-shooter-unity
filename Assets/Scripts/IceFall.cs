@@ -31,8 +31,6 @@ public class IceFall : MonoBehaviour
     {
         transform.localScale = Vector3.Lerp(transform.localScale, targetVectorScale, lerpSpeed * Time.deltaTime);
 
-        Debug.Log(Vector3.Distance(transform.localScale, targetVectorScale));
-
         if (Vector3.Distance(transform.localScale, targetVectorScale) <= 0.2f)
         {
             rb.useGravity = true;
