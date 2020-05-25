@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AboutUIController : MonoBehaviour
+public class LevelUpController : MonoBehaviour
 {
+    [SerializeField]
+    public GameObject lobbyControls;
 
     [SerializeField]
+    public CameraFollow camera;
     public Animator animator;
 
     void Start()
@@ -23,11 +26,10 @@ public class AboutUIController : MonoBehaviour
         animator.Play("OpenUI");
     }
 
-
     public void Close()
     {
         gameObject.SetActive(false);
+        lobbyControls.SetActive(true);
+        camera.isFollowingPlayer = true;
     }
-
-
 }

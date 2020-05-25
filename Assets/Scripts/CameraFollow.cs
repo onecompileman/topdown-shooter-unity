@@ -50,4 +50,11 @@ public class CameraFollow : MonoBehaviour
         LeanTween.move(gameObject, new Vector3(0, 0, 20), 1.5f);
         LeanTween.rotate(gameObject, new Vector3(0, 0, 0), 1.5f).setOnComplete(() => callback());
     }
+
+    public void MoveToLevelUp(Action callback)
+    {
+        isFollowingPlayer = false;
+        LeanTween.move(gameObject, new Vector3(14, 1, -1), 1.5f);
+        LeanTween.rotate(gameObject, new Vector3(0, 90, 0), 1.5f).setOnComplete(() => callback());
+    }
 }

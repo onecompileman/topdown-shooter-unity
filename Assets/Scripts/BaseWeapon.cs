@@ -79,7 +79,7 @@ public class BaseWeapon : MonoBehaviour
         canFire = true;
     }
 
-    void Update()
+    void LateUpdate()
     {
         if (!player.isStunned)
         {

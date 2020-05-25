@@ -1,12 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class InteractButton : MonoBehaviour
 {
     [SerializeField]
     public GameObject shopKeeper;
+
+    [SerializeField]
+    public GameObject levelUp;
+
+    [SerializeField]
+    public LevelUpController levelUpUI;
+
     [SerializeField]
     public GameObject lobbyGem;
 
@@ -49,6 +57,11 @@ public class InteractButton : MonoBehaviour
             mode = "play";
             interactText.text = "Press to play";
         }
+        else if (Vector3.Distance(playerPos, levelUp.transform.position) <= distanceRadius)
+        {
+            mode = "levelup";
+            interactText.text = "Press to Level Up";
+        }
         else
         {
             mode = "";
@@ -75,6 +88,15 @@ public class InteractButton : MonoBehaviour
                 {
                     loading.gameObject.SetActive(true);
                     loading.PlayOpenAnimation();
+                    SceneManager.LoadScene("Game");
+                });
+                break;
+            case "levelup":
+                lobbyControls.SetActive(false);
+                camera.MoveToLevelUp(() =>
+                {
+                    levelUpUI.gameObject.SetActive(true);
+                    levelUpUI.PlayOpenAnimation();
                 });
                 break;
         }
