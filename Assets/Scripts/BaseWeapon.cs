@@ -88,8 +88,8 @@ public class BaseWeapon : MonoBehaviour
                 if ((Mathf.Abs(shootJoystick.Vertical) > 0.25 || Mathf.Abs(shootJoystick.Horizontal) > 0.25))
                 {
                     isFiring = true;
-                    camera.xOffset = shootJoystick.Horizontal * 7;
-                    camera.yOffset = shootJoystick.Vertical * 5.5f;
+                    // camera.xOffset = shootJoystick.Horizontal * 7;
+                    // camera.yOffset = shootJoystick.Vertical * 5.5f;
                 }
                 else
                 {
@@ -139,8 +139,8 @@ public class BaseWeapon : MonoBehaviour
                     var targetVector = nearestEnemy.transform.position - player.transform.position;
                     targetVector.Normalize();
 
-                    camera.xOffset = targetVector.x * 3;
-                    camera.yOffset = targetVector.z * 1.5f;
+                    // camera.xOffset = targetVector.x * 3;
+                    // camera.yOffset = targetVector.z * 1.5f;
 
                     player.transform.rotation = Quaternion.Euler(0, -Mathf.Atan2(targetVector.z, targetVector.x) * Mathf.Rad2Deg + 90, 0);
                 }

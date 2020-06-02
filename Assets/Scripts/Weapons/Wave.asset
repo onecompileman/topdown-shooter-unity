@@ -16,3 +16,4 @@ MonoBehaviour:
   price: 250
   description: 
   image: {fileID: 21300000, guid: de0fc43ac2046d647b05e70de2293f77, type: 3}
+  manaCost: 20

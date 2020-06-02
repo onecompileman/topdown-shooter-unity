@@ -24,7 +24,7 @@ public class AboutUIController : MonoBehaviour
     }
 
 
-    public void Close()
+    public virtual void Close()
     {
         gameObject.SetActive(false);
     }

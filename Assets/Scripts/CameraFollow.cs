@@ -28,7 +28,7 @@ public class CameraFollow : MonoBehaviour
         {
             xOffsetC = Mathf.Lerp(xOffsetC, xOffset, 0.2f);
             yOffsetC = Mathf.Lerp(yOffsetC, yOffset, 0.2f);
-            var positionToFollow = new Vector3(follow.position.x + xOffsetC, 15f, follow.position.z - 5.5f + yOffsetC);
+            var positionToFollow = new Vector3(follow.position.x + xOffsetC, 17.5f, follow.position.z - 4.5f + yOffsetC);
 
             rotateTo = Quaternion.Euler(70, 0, 0);
 

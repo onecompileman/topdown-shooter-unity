@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20006ab1560ad804897624f6b19a7a1f, type: 3}
-  m_Name: Rifle
+  m_Name: Pistol
   m_EditorClassIdentifier: 
-  name: Rifle
-  price: 20
+  name: Pistol
+  price: 0
   description: 
-  image: {fileID: 21300000, guid: ef0af1e20b343d84c86d4ad503f5e37c, type: 3}
-  manaCost: 1
+  image: {fileID: 21300000, guid: 20d74fc900df11d4ab8b1a1c7e9e5924, type: 3}
+  manaCost: 0

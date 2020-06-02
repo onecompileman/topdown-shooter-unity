@@ -9,19 +9,20 @@ public static class PlayerDataState
     public static int life;
     public static int mana;
     public static int maxWeaponSlots;
+    public static int maxCompanionSlots = 0;
     public static int coins;
     public static int gems;
 
-    public static string[] weapons;
+    public static List<string> weapons = new List<string>();
 
-    public static string[] companions;
+    public static List<string> companions = new List<string>();
 
-    public static int currentLevel;
-    public static int currentFloor;
-    public static int currentCoinsCollected;
-    public static int currentGemsCollected;
-    public static string[] currentWeapons;
-    public static string[] currentCompanions;
+    public static int? currentLevel;
+    public static int? currentFloor;
+    public static int? currentCoinsCollected;
+    public static int? currentGemsCollected;
+    public static List<string> currentWeapons = new List<string>();
+    public static List<string> currentCompanions = new List<string>();
 
     public static void ReadPlayerData(PlayerData data)
     {

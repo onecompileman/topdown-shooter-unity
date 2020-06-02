@@ -9,4 +9,6 @@ public class WeaponItemShop : ScriptableObject
     public int price;
     public string description;
     public Sprite image;
+
+    public int manaCost;
 }

@@ -16,6 +16,12 @@ public class InteractButton : MonoBehaviour
     public LevelUpController levelUpUI;
 
     [SerializeField]
+    public PlayerNewUIController playerNewUI;
+
+    [SerializeField]
+    public PlayerContinueUIController playerContinueUI;
+
+    [SerializeField]
     public GameObject lobbyGem;
 
     [SerializeField]
@@ -86,9 +92,20 @@ public class InteractButton : MonoBehaviour
                 lobbyControls.SetActive(false);
                 camera.MoveToFloorGem(() =>
                 {
-                    loading.gameObject.SetActive(true);
-                    loading.PlayOpenAnimation();
-                    SceneManager.LoadScene("Game");
+                    if (PlayerDataState.currentLevel != null)
+                    {
+                        playerContinueUI.gameObject.SetActive(true);
+                        playerContinueUI.PlayOpenAnimation();
+                        playerContinueUI.PlaceProgress();
+                    }
+                    else
+                    {
+                        playerNewUI.gameObject.SetActive(true);
+                        playerNewUI.PlayOpenAnimation();
+                    }
+                    // loading.gameObject.SetActive(true);
+                    // loading.PlayOpenAnimation();
+                    // SceneManager.LoadScene("Game");
                 });
                 break;
             case "levelup":

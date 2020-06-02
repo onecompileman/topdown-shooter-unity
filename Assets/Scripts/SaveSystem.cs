@@ -8,7 +8,7 @@ public static class SaveSystem
     public static void SavePlayerData()
     {
         BinaryFormatter formatter = new BinaryFormatter();
-        string path = Application.persistentDataPath + "/player.data";
+        string path = Application.persistentDataPath + "/player1.data";
         FileStream stream = new FileStream(path, FileMode.Create);
 
         formatter.Serialize(stream, GetCurrentPlayerState());
@@ -18,7 +18,7 @@ public static class SaveSystem
 
     public static void LoadPlayerData()
     {
-        string path = Application.persistentDataPath + "/player.data";
+        string path = Application.persistentDataPath + "/player1.data";
 
         if (File.Exists(path))
         {
@@ -32,6 +32,11 @@ public static class SaveSystem
         else
         {
             SaveDefaultPlayerData();
+
+            BinaryFormatter formatter = new BinaryFormatter();
+            FileStream stream = new FileStream(path, FileMode.Open);
+
+            PlayerData data = formatter.Deserialize(stream) as PlayerData;
         }
 
     }
@@ -39,7 +44,7 @@ public static class SaveSystem
     private static void SaveDefaultPlayerData()
     {
         BinaryFormatter formatter = new BinaryFormatter();
-        string path = Application.persistentDataPath + "/player.data";
+        string path = Application.persistentDataPath + "/player1.data";
         FileStream stream = new FileStream(path, FileMode.Create);
 
         formatter.Serialize(stream, new PlayerData());
