@@ -43,6 +43,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     public bool isLobbyMode;
 
+    [SerializeField]
+    public GameOverUI gameOver;
+
+    [SerializeField]
+    public AudioSource audioSource;
+
     public bool isStunned = false;
 
     public bool isFrozen = false;
@@ -66,7 +72,6 @@ public class PlayerController : MonoBehaviour
 
     private bool isRolling = false;
 
-
     private Vector3 velocity = Vector3.zero;
 
     private Rigidbody rb;
@@ -74,16 +79,18 @@ public class PlayerController : MonoBehaviour
 
     private int speedId;
 
+    private bool isDead = true;
+
     void Start()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
-        originalLife = life;
-        originalMana = mana;
+        audioSource = GetComponent<AudioSource>();
         playerSkin = meshRenderer.materials[2];
         originalColor = new Color { r = playerSkin.color.r, g = playerSkin.color.g, b = playerSkin.color.b };
         speedId = Animator.StringToHash("Speed");
 
+        StartCoroutine("LateStart");
         StartCoroutine("RegenMana");
     }
 
@@ -141,6 +148,12 @@ public class PlayerController : MonoBehaviour
 
         // hasFullyRotated = (Vector3.Distance(rotationToFollow.eulerAngles, transform.rotation.eulerAngles) < 0.1f);
 
+        if (life <= 0 && !isDead && !isLobbyMode)
+        {
+            isDead = true;
+            StartCoroutine("GameOver");
+        }
+
         transform.position = Vector3.Lerp(transform.position, transform.position + (vel * movespeed), Time.deltaTime);
     }
 
@@ -152,6 +165,7 @@ public class PlayerController : MonoBehaviour
     public void TakeDamageEffect()
     {
         StartCoroutine("TakeDamage");
+        audioSource.Play();
     }
 
     public void TakeMana(float m)
@@ -174,6 +188,14 @@ public class PlayerController : MonoBehaviour
     public void StunPlayer(float cooldown)
     {
         StartCoroutine("StunPlayerEffect", cooldown);
+    }
+
+    IEnumerator GameOver()
+    {
+        gameOver.gameObject.SetActive(true);
+        gameOver.PlayOpenAnimation();
+        yield return new WaitForSeconds(0.5f);
+        Time.timeScale = 0;
     }
 
     IEnumerator TakeManaEffects()
@@ -228,13 +250,20 @@ public class PlayerController : MonoBehaviour
         playerSkin.color = originalColor;
     }
 
+    private IEnumerator LateStart()
+    {
+        yield return new WaitForSeconds(3f);
+        originalLife = life = PlayerDataState.life;
+        originalMana = mana = PlayerDataState.mana;
+        isDead = false;
+    }
+
     private IEnumerator TakeLife()
     {
         playerSkin.color = new Color(0.3f, 1, 0.3f);
         yield return new WaitForSeconds(0.2f);
         playerSkin.color = originalColor;
     }
-
 
     private IEnumerator Roll()
     {

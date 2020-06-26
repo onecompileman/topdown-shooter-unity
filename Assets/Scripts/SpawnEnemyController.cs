@@ -20,10 +20,11 @@ public class SpawnEnemyController : EnemyController
     [SerializeField]
     public Transform healthRed;
 
+    [HideInInspector]
+    public RoomManager room;
 
     public override void OnDeath()
     {
-        Instantiate(deathEffects, transform.position, Quaternion.identity);
 
         if (spawnLevel > 0)
         {
@@ -38,8 +39,31 @@ public class SpawnEnemyController : EnemyController
                 spawnScript.life = originalLife / 2;
                 spawnScript.healthRed.localScale = new Vector3(healthRed.localScale.x * scaleMultiplier, healthRed.localScale.y, healthRed.localScale.z);
                 spawnScript.speed = speed * 1.2f;
+
+                spawnScript.enemyRoomIndex = room.enemies.Count;
+                spawnScript.onDeathDelegate += room.RemoveEnemy;
+
+                room.enemies.Add(spawnScript);
             }
         }
+
+        Instantiate(deathEffects, transform.position, Quaternion.identity);
+
+        if (canDropHealth)
+        {
+            var healthObject = Instantiate(health, transform.position, Quaternion.identity);
+
+            healthObject.GetComponent<HealthPowerup>().lifeToAdd = lifeToAdd;
+        }
+
+        if (mana)
+        {
+            AddMana();
+        }
+
+        CallOnDeathDelegate();
+
+        AudioSource.PlayClipAtPoint(enemyExplode, transform.position);
 
         Destroy(gameObject);
     }

@@ -63,7 +63,928 @@
                                     "enemyWaves": [
                                         {
                                             "enemyType": 1,
+                                            "enemyCount": 3
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 6
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": true,
+                            "chestGem": 2,
+                            "chestCoin": 5
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "floorNo": 2,
+                    "rooms": [
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
                                             "enemyCount": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 3
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 4
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 7
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 3
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 6
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 7
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 3
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 3
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 3,
+                                            "enemyCount": 1
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": true,
+                            "chestGem": 3,
+                            "chestCoin": 8
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "floorNo": 3,
+                    "rooms": [
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 3
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 4
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 5,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 7
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 3
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 6
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 3
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 3
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 3,
+                                            "enemyCount": 1
+                                        },
+                                        {
+                                            "enemyType": 5,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": true,
+                            "chestGem": 4,
+                            "chestCoin": 8
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "floorNo": 4,
+                    "rooms": [
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 3
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 4
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 5,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 7
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 3
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 6
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 6
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 4
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 3
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 3
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 3,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 5,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": true,
+                            "chestGem": 4,
+                            "chestCoin": 8
+                        }
+                    ]
+                },
+                {
+                    "level": 1,
+                    "floorNo": 5,
+                    "rooms": [
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 3
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 4
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 5,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 7
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 3
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 6
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 6
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 4
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 3
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 3
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 3,
+                                            "enemyCount": 1
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 3
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 3
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 3,
+                                            "enemyCount": 1
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 4,
+                                            "enemyCount": 1
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": true,
+                            "chestGem": 6,
+                            "chestCoin": 10
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 2,
+            "floors": [
+                {
+                    "level": 2,
+                    "floorNo": 1,
+                    "rooms": [
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        },
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 3
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        },
+                                        {
+                                            "enemyType": 5,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 3
                                         },
                                         {
                                             "enemyType": 2,
@@ -95,9 +1016,135 @@
                                         {
                                             "enemyType": 1,
                                             "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 5,
+                                            "enemyCount": 2
                                         }
                                     ]
                                 },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 3
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 5,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 3,
+                                            "enemyCount": 1
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": true,
+                            "chestGem": 8,
+                            "chestCoin": 8
+                        }
+                    ]
+                },
+                {
+                    "level": 2,
+                    "floorNo": 2,
+                    "rooms": [
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 5,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 3,
+                                            "enemyCount": 1
+                                        },
+                                        {
+                                            "enemyType": 5,
+                                            "enemyCount": 1
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
                                 {
                                     "enemyWaves": [
                                         {
@@ -113,8 +1160,63 @@
                                 {
                                     "enemyWaves": [
                                         {
+                                            "enemyType": 3,
+                                            "enemyCount": 3
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
                                             "enemyType": 1,
                                             "enemyCount": 6
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 3
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 3
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
                                         },
                                         {
                                             "enemyType": 2,
@@ -126,8 +1228,3296 @@
                             "hasChest": false,
                             "chestGem": 0,
                             "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 3,
+                                            "enemyCount": 1
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": true,
+                            "chestGem": 5,
+                            "chestCoin": 8
                         }
                     ]
+                },
+                {
+                    "level": 2,
+                    "floorNo": 3,
+                    "rooms": [
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 4
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 3
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 3,
+                                            "enemyCount": 1
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 4
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 5,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 3,
+                                            "enemyCount": 1
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 3
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 6,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 6,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 6,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 6,
+                                            "enemyCount": 3
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 3,
+                                            "enemyCount": 1
+                                        },
+                                        {
+                                            "enemyType": 6,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        }
+                    ]
+                },
+                {
+                    "level": 2,
+                    "floorNo": 4,
+                    "rooms": [
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 5,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 6,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 11,
+                                            "enemyCount": 1
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 6,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 5,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 6,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 11,
+                                            "enemyCount": 1
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 6,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 5,
+                                            "enemyCount": 4
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 6
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 6,
+                                            "enemyCount": 4
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 6,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 11,
+                                            "enemyCount": 1
+                                        },
+                                        {
+                                            "enemyType": 6,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 5,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 11,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 3,
+                                            "enemyCount": 1
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": true,
+                            "chestGem": 8,
+                            "chestCoin": 10
+                        }
+                    ]
+                },
+                {
+                    "level": 2,
+                    "floorNo": 5,
+                    "rooms": [
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 5
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 6,
+                                            "enemyCount": 4
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 3,
+                                            "enemyCount": 1
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 11,
+                                            "enemyCount": 1
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 5,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 6,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 7
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 3
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 11,
+                                            "enemyCount": 1
+                                        },
+                                        {
+                                            "enemyType": 3,
+                                            "enemyCount": 1
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 6
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 11,
+                                            "enemyCount": 1
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 11,
+                                            "enemyCount": 1
+                                        },
+                                        {
+                                            "enemyType": 6,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 5,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 6,
+                                            "enemyCount": 4
+                                        },
+                                        {
+                                            "enemyType": 11,
+                                            "enemyCount": 1
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 3,
+                                            "enemyCount": 1
+                                        },
+                                        {
+                                            "enemyType": 6,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 5,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 3,
+                                            "enemyCount": 1
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 6,
+                                            "enemyCount": 3
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 5,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 7,
+                                            "enemyCount": 1
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": true,
+                            "chestGem": 6,
+                            "chestCoin": 10
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "level": 3,
+            "floors": [
+                {
+                    "level": 3,
+                    "floorNo": 1,
+                    "rooms": [
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        },
+                                        {
+                                            "enemyType": 6,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 5,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 15,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        },
+                                        {
+                                            "enemyType": 5,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 15,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 11,
+                                            "enemyCount": 1
+                                        },
+                                        {
+                                            "enemyType": 15,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 6,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        },
+                                        {
+                                            "enemyType": 6,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 6
+                                        },
+                                        {
+                                            "enemyType": 15,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 5,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        },
+                                        {
+                                            "enemyType": 3,
+                                            "enemyCount": 1
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 5,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 15,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 6,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 15,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 11,
+                                            "enemyCount": 1
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": true,
+                            "chestGem": 8,
+                            "chestCoin": 8
+                        }
+                    ]
+                },
+                {
+                    "level": 3,
+                    "floorNo": 2,
+                    "rooms": [
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 6,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        },
+                                        {
+                                            "enemyType": 11,
+                                            "enemyCount": 1
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 3,
+                                            "enemyCount": 1
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 15,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 5,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 6,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        },
+                                        {
+                                            "enemyType": 3,
+                                            "enemyCount": 1
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 3,
+                                            "enemyCount": 1
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 15,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 15,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 2,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 3,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 11,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 15,
+                                    "enemyCount": 2
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 12,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 5,
+                                    "enemyCount": 2
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 3,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 12,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 11,
+                                    "enemyCount": 2
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": true,
+                    "chestGem": 5,
+                    "chestCoin": 8
+                }
+            ]
+        },
+        {
+            "level": 3,
+            "floorNo": 3,
+            "rooms": [
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 8,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 12,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 15,
+                                    "enemyCount": 2
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 3,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 2,
+                                    "enemyCount": 4
+                                },
+                                {
+                                    "enemyType": 12,
+                                    "enemyCount": 2
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 5,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 3,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 15,
+                                    "enemyCount": 2
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 2,
+                                    "enemyCount": 4
+                                },
+                                {
+                                    "enemyType": 15,
+                                    "enemyCount": 2
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 12,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 8,
+                                    "enemyCount": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 2,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 2,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                },
+                                {
+                                    "enemyType": 12,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 2,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 3,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 11,
+                                    "enemyCount": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 10,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 15,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                }
+            ]
+        },
+        {
+            "level": 3,
+            "floorNo": 4,
+            "rooms": [
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 5,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 15,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 8,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 6
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 11,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 15,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 12,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 5,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                },
+                                {
+                                    "enemyType": 3,
+                                    "enemyCount": 1
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 2,
+                                    "enemyCount": 6
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 12,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 11,
+                                    "enemyCount": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 5,
+                                    "enemyCount": 4
+                                },
+                                {
+                                    "enemyType": 2,
+                                    "enemyCount": 6
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                },
+                                {
+                                    "enemyType": 12,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 2,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 11,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 2,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 5,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 11,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 12,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 3,
+                                    "enemyCount": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 8,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 9,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 10,
+                                    "enemyCount": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                }
+            ]
+        },
+        {
+            "level": 3,
+            "floorNo": 5,
+            "rooms": [
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                },
+                                {
+                                    "enemyType": 5,
+                                    "enemyCount": 2
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                },
+                                {
+                                    "enemyType": 3,
+                                    "enemyCount": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 15,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 12,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 8,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 11,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                },
+                                {
+                                    "enemyType": 3,
+                                    "enemyCount": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 2,
+                                    "enemyCount": 4
+                                },
+                                {
+                                    "enemyType": 5,
+                                    "enemyCount": 2
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 11,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 3,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 12,
+                                    "enemyCount": 2
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 11,
+                                    "enemyCount": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 2,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 9,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 5,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 12,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                },
+                                {
+                                    "enemyType": 11,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 2,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 3,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                },
+                                {
+                                    "enemyType": 11,
+                                    "enemyCount": 1
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                },
+                                {
+                                    "enemyType": 12,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 15,
+                                    "enemyCount": 2
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 3,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 10,
+                                    "enemyCount": 1
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                },
+                                {
+                                    "enemyType": 2,
+                                    "enemyCount": 4
+                                },
+                                {
+                                    "enemyType": 12,
+                                    "enemyCount": 2
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 5,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 2,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 11,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 3,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 15,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 12,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                },
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 13,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 15,
+                                    "enemyCount": 2
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": true,
+                    "chestGem": 7,
+                    "chestCoin": 10
+                }
+            ]
+        },
+        {
+            "level": 4,
+            "floors": [
+                {
+                    "level": 4,
+                    "floorNo": 1,
+                    "rooms": [
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        },
+                                        {
+                                            "enemyType": 6,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 5,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 15,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        },
+                                        {
+                                            "enemyType": 5,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 15,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 14,
+                                            "enemyCount": 1
+                                        },
+                                        {
+                                            "enemyType": 15,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 6,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        },
+                                        {
+                                            "enemyType": 6,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 6
+                                        },
+                                        {
+                                            "enemyType": 15,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 5,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        },
+                                        {
+                                            "enemyType": 3,
+                                            "enemyCount": 1
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 5,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 15,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 6,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 15,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 14,
+                                            "enemyCount": 1
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": true,
+                            "chestGem": 8,
+                            "chestCoin": 8
+                        }
+                    ]
+                },
+                {
+                    "level": 4,
+                    "floorNo": 2,
+                    "rooms": [
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 6,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        },
+                                        {
+                                            "enemyType": 14,
+                                            "enemyCount": 1
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 3,
+                                            "enemyCount": 1
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 15,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 5,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 6,
+                                            "enemyCount": 4
+                                        }
+                                    ]
+                                }
+                            ],
+                            "hasChest": false,
+                            "chestGem": 0,
+                            "chestCoin": 0
+                        },
+                        {
+                            "enemyWaveGroups": [
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 1,
+                                            "enemyCount": 5
+                                        },
+                                        {
+                                            "enemyType": 2,
+                                            "enemyCount": 4
+                                        },
+                                        {
+                                            "enemyType": 3,
+                                            "enemyCount": 1
+                                        }
+                                    ]
+                                },
+                                {
+                                    "enemyWaves": [
+                                        {
+                                            "enemyType": 3,
+                                            "enemyCount": 1
+                                        },
+                                        {
+                                            "enemyType": 12,
+                                            "enemyCount": 2
+                                        },
+                                        {
+                                            "enemyType": 15,
+                                            "enemyCount": 2
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 15,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 2,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 3,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 14,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 15,
+                                    "enemyCount": 2
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 12,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 5,
+                                    "enemyCount": 2
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 3,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 12,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 14,
+                                    "enemyCount": 2
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": true,
+                    "chestGem": 5,
+                    "chestCoin": 8
+                }
+            ]
+        },
+        {
+            "level": 4,
+            "floorNo": 3,
+            "rooms": [
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 8,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 12,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 15,
+                                    "enemyCount": 2
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 3,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 2,
+                                    "enemyCount": 4
+                                },
+                                {
+                                    "enemyType": 12,
+                                    "enemyCount": 2
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 5,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 3,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 15,
+                                    "enemyCount": 2
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 2,
+                                    "enemyCount": 4
+                                },
+                                {
+                                    "enemyType": 15,
+                                    "enemyCount": 2
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 12,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 8,
+                                    "enemyCount": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 2,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 2,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                },
+                                {
+                                    "enemyType": 12,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 2,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 3,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 14,
+                                    "enemyCount": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 10,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 15,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                }
+            ]
+        },
+        {
+            "level": 4,
+            "floorNo": 4,
+            "rooms": [
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 5,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 15,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 8,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 6
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 14,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 15,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 12,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 5,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                },
+                                {
+                                    "enemyType": 3,
+                                    "enemyCount": 1
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 2,
+                                    "enemyCount": 6
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 12,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 14,
+                                    "enemyCount": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 5,
+                                    "enemyCount": 4
+                                },
+                                {
+                                    "enemyType": 2,
+                                    "enemyCount": 6
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                },
+                                {
+                                    "enemyType": 12,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 2,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 14,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 2,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 5,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 14,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 12,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 3,
+                                    "enemyCount": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 8,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 9,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 10,
+                                    "enemyCount": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                }
+            ]
+        },
+        {
+            "level": 4,
+            "floorNo": 5,
+            "rooms": [
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                },
+                                {
+                                    "enemyType": 5,
+                                    "enemyCount": 2
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                },
+                                {
+                                    "enemyType": 3,
+                                    "enemyCount": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 15,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 12,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 8,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 14,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                },
+                                {
+                                    "enemyType": 3,
+                                    "enemyCount": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 2,
+                                    "enemyCount": 4
+                                },
+                                {
+                                    "enemyType": 5,
+                                    "enemyCount": 2
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 14,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 3,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 12,
+                                    "enemyCount": 2
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 14,
+                                    "enemyCount": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 2,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 9,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 5,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 12,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                },
+                                {
+                                    "enemyType": 14,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 2,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 3,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                },
+                                {
+                                    "enemyType": 14,
+                                    "enemyCount": 1
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                },
+                                {
+                                    "enemyType": 12,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 15,
+                                    "enemyCount": 2
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 3,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 10,
+                                    "enemyCount": 1
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                },
+                                {
+                                    "enemyType": 2,
+                                    "enemyCount": 4
+                                },
+                                {
+                                    "enemyType": 12,
+                                    "enemyCount": 2
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                },
+                                {
+                                    "enemyType": 5,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 2,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 14,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 3,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                }
+                            ]
+                        },
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 15,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 12,
+                                    "enemyCount": 2
+                                },
+                                {
+                                    "enemyType": 6,
+                                    "enemyCount": 4
+                                },
+                                {
+                                    "enemyType": 1,
+                                    "enemyCount": 5
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": false,
+                    "chestGem": 0,
+                    "chestCoin": 0
+                },
+                {
+                    "enemyWaveGroups": [
+                        {
+                            "enemyWaves": [
+                                {
+                                    "enemyType": 16,
+                                    "enemyCount": 1
+                                },
+                                {
+                                    "enemyType": 15,
+                                    "enemyCount": 2
+                                }
+                            ]
+                        }
+                    ],
+                    "hasChest": true,
+                    "chestGem": 7,
+                    "chestCoin": 10
                 }
             ]
         }

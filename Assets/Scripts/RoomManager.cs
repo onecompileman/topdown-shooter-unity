@@ -88,13 +88,16 @@ public class RoomManager : MonoBehaviour
     public delegate void OnFloorFinished();
     public event OnFloorFinished onFloorFinished;
 
+    [HideInInspector]
+    public List<EnemyController> enemies = new List<EnemyController>();
+
+
     private EnemyPrefabManager enemyPrefabManager;
 
     private NotificationUIManager notificationUIManager;
 
     private Text waveText;
 
-    private List<EnemyController> enemies = new List<EnemyController>();
 
     private PlayerController player;
 
@@ -297,20 +300,16 @@ public class RoomManager : MonoBehaviour
 
     private IEnumerator OpenPath(GameObject path)
     {
-        Debug.Log("here path");
-
         var time = 1f / 60;
         var targetDestination = new Vector3(path.transform.position.x, path.transform.position.y - 100, path.transform.position.z - 10);
         var vel = targetDestination - path.transform.position;
         vel = vel * time;
-        Debug.Log(vel);
 
 
         for (var i = 0; i < 60; i++)
         {
             path.transform.position = path.transform.position + vel;
             yield return new WaitForSeconds(time);
-            Debug.Log(path.transform.position);
         }
 
         path.SetActive(false);
@@ -319,15 +318,12 @@ public class RoomManager : MonoBehaviour
 
     private IEnumerator ClosePath(GameObject path)
     {
-        Debug.Log("here path");
-
 
         var time = 1f / 60;
         var targetDestination = new Vector3(path.transform.position.x, path.transform.position.y + 100, path.transform.position.z);
         var vel = targetDestination - path.transform.position;
         vel = vel * time;
 
-        Debug.Log(vel);
 
         for (var i = 0; i < 60; i++)
         {
@@ -367,7 +363,7 @@ public class RoomManager : MonoBehaviour
         enemies.Add(enemyScript);
     }
 
-    private void RemoveEnemy(int index)
+    public void RemoveEnemy(int index)
     {
         var enemyIndex = enemies.Select((enemy, i) => new { enemy, i })
                                 .Where(enemy => enemy.enemy.enemyRoomIndex == index)

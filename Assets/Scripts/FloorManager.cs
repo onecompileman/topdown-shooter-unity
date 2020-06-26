@@ -2,12 +2,22 @@
 using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FloorManager : MonoBehaviour
 {
 
     [SerializeField]
     public GroundPrefabManager groundPrefabManager;
+
+    [SerializeField]
+    public FloorCompletedUI floorCompleted;
+
+    [SerializeField]
+    public NotificationUIManager notification;
+
+    [SerializeField]
+    public Text floorLevelText;
 
     [HideInInspector]
 
@@ -49,6 +59,8 @@ public class FloorManager : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("Player").GetComponent<PlayerController>();
+
+        floorLevelText.text = $"{PlayerDataState.currentLevel}-{PlayerDataState.currentFloor}";
 
         var map = GameObject.Find("Map");
 
@@ -156,6 +168,8 @@ public class FloorManager : MonoBehaviour
                 currentRoom.onFloorFinished += FloorFinished;
                 currentRoom.roomStats = floorStats.rooms[rooms.Count()];
                 currentRoom.isLastRoom = rooms.Count() + 1 == floorStats.rooms.Count();
+                Debug.Log(floorStats.rooms.Count());
+                Debug.Log(rooms.Count() + 1);
                 roomGrid[r, c] = currentRoom;
 
                 rooms.Add(currentRoom);
@@ -198,7 +212,17 @@ public class FloorManager : MonoBehaviour
 
     public void FloorFinished()
     {
-        onFloorFinishedDelegate();
+        notification.ShowNotification("Destroy the Floor Gem");
+        ShowFloorCompleted();
+        // onFloorFinishedDelegate();
+    }
+
+    private void ShowFloorCompleted()
+    {
+        floorCompleted.gameObject.SetActive(true);
+        floorCompleted.PlayOpenAnimation();
+        floorCompleted.UpdateUI();
+        floorCompleted.PlaySound();
     }
 
     private void OnRoomFinished(int[] gridPos, bool isLastRoom)

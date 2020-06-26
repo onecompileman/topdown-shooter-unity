@@ -921,9 +921,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c0a294597e0a604483e12e7b86245d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 100
+  life: 30
   healthIndicator: {fileID: 6757684395024423736}
   speed: 3
+  enemyShootSound: {fileID: 8300000, guid: dc2ceaa802371aa4d9d28e934c8b1fa5, type: 3}
+  enemyExplode: {fileID: 8300000, guid: e4bbbba6df4053b4ebb84d80edafc8a0, type: 3}
   damage: 20
   follow: {fileID: 0}
   distanceToShoot: 10
@@ -965,6 +967,7 @@ MonoBehaviour:
   manaToAdd: 10
   minMana: 0
   maxMana: 3
+  enemyRoomIndex: 0
   isDashing: 0
   animator: {fileID: 0}
   enemySkin: {fileID: 0}

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
@@ -20,8 +21,11 @@ public class PlayerHealthUI : MonoBehaviour
     void Update()
     {
         var width = (player.life / player.originalLife) * 220;
-        health.sizeDelta = new Vector2(width, 20);
-        health.localPosition = new Vector3(-((220 - width) / 2), 0, 0);
-        lifeText.text = $@"{player.life}/{player.originalLife}";
+        if (width != Mathf.Infinity && !Double.IsNaN(width))
+        {
+            health.sizeDelta = new Vector2(width, 20);
+            health.localPosition = new Vector3(-((220 - width) / 2), 0, 0);
+            lifeText.text = $@"{player.life}/{player.originalLife}";
+        }
     }
 }

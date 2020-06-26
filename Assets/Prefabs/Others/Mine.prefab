@@ -81,6 +81,7 @@ MonoBehaviour:
     type: 3}
   explodeFrames: 5
   explodeRadius: 8
+  explosionSound: {fileID: 8300000, guid: 579e7d4fd02ffa04bafa2a11a76cda21, type: 3}
   life: 40
   mineDamage: 100
 --- !u!114 &4804711723077986265

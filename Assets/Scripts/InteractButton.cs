@@ -48,7 +48,6 @@ public class InteractButton : MonoBehaviour
     [HideInInspector]
     public string mode;
 
-
     // Update is called once per frame
     void FixedUpdate()
     {
@@ -92,7 +91,7 @@ public class InteractButton : MonoBehaviour
                 lobbyControls.SetActive(false);
                 camera.MoveToFloorGem(() =>
                 {
-                    if (PlayerDataState.currentLevel != null)
+                    if (PlayerDataState.currentLevel != null && PlayerDataState.currentLevel != 0)
                     {
                         playerContinueUI.gameObject.SetActive(true);
                         playerContinueUI.PlayOpenAnimation();

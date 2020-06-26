@@ -773,9 +773,11 @@ MonoBehaviour:
   life: 450
   healthIndicator: {fileID: 8462043524658661282}
   speed: 5.2
+  enemyShootSound: {fileID: 8300000, guid: dc2ceaa802371aa4d9d28e934c8b1fa5, type: 3}
+  enemyExplode: {fileID: 8300000, guid: e4bbbba6df4053b4ebb84d80edafc8a0, type: 3}
   damage: 10
   follow: {fileID: 0}
-  distanceToShoot: 30
+  distanceToShoot: 25
   canShoot: 1
   attackCooldown: 0.7
   meshRenderer: {fileID: 7388054682362945526}
@@ -814,6 +816,7 @@ MonoBehaviour:
   manaToAdd: 10
   minMana: 3
   maxMana: 6
+  enemyRoomIndex: 0
   isDashing: 0
   animator: {fileID: 0}
   enemySkin: {fileID: 0}

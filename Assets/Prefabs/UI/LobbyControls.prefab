@@ -181,7 +181,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1146635957178892374}
-  m_RootOrder: 3
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1588,7 +1588,7 @@ RectTransform:
   - {fileID: 1146635956200316356}
   - {fileID: 1146635956160484188}
   m_Father: {fileID: 1146635957178892374}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1657,6 +1657,19 @@ MonoBehaviour:
   - {fileID: 1146635956160484189}
   - {fileID: 1146635956493939290}
   - {fileID: 1146635957327778239}
+  filteredWeapons: []
+  filteredWeaponImages: []
+  weaponsString:
+  - Pistol
+  - Rifle
+  - Shotgun
+  - Emp
+  - Grenade
+  - Star
+  - Wave
+  - SMG
+  - Ice shards
+  - Multi
 --- !u!1 &1146635956619984961
 GameObject:
   m_ObjectHideFlags: 0
@@ -2218,7 +2231,6 @@ RectTransform:
   - {fileID: 2832588505780756495}
   - {fileID: 2832588507811099141}
   - {fileID: 1146635957191277083}
-  - {fileID: 1146635955269256249}
   - {fileID: 1146635956555395929}
   - {fileID: 1146635957351450593}
   - {fileID: 1146635957189145479}
@@ -2228,6 +2240,7 @@ RectTransform:
   - {fileID: 8589648308527760046}
   - {fileID: 6126300367266735441}
   - {fileID: 4874267850915480342}
+  - {fileID: 1146635955269256249}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2327,7 +2340,7 @@ RectTransform:
   m_Children:
   - {fileID: 1146635956308067079}
   m_Father: {fileID: 1146635957178892374}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2830,7 +2843,7 @@ RectTransform:
   - {fileID: 1146635956764258808}
   - {fileID: 1146635956321942652}
   m_Father: {fileID: 1146635957178892374}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3170,7 +3183,7 @@ RectTransform:
   - {fileID: 3253576925228439740}
   - {fileID: 5550038930627646346}
   m_Father: {fileID: 1146635957178892374}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3224,6 +3237,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shopKeeper: {fileID: 0}
+  levelUp: {fileID: 0}
+  levelUpUI: {fileID: 0}
+  playerNewUI: {fileID: 0}
+  playerContinueUI: {fileID: 0}
+  lobbyGem: {fileID: 0}
+  loading: {fileID: 0}
+  shop: {fileID: 0}
   player: {fileID: 0}
   camera: {fileID: 0}
   distanceRadius: 3
@@ -3435,7 +3455,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1146635957178892374}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3836,7 +3856,7 @@ RectTransform:
   - {fileID: 8589648306704193266}
   - {fileID: 8589648308565065004}
   m_Father: {fileID: 1146635957178892374}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4022,7 +4042,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1146635957178892374}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4170,7 +4190,7 @@ RectTransform:
   - {fileID: 8589648306788104659}
   - {fileID: 8589648307934424934}
   m_Father: {fileID: 1146635957178892374}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4211,7 +4231,7 @@ RectTransform:
   - {fileID: 4005966980975472738}
   - {fileID: 6106646071085085238}
   m_Father: {fileID: 1146635957178892374}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

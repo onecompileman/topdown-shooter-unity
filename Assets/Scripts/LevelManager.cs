@@ -26,6 +26,8 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         levels = JsonUtility.FromJson<LevelsJSON>(levelJSON.text);
+        currentLevelIndex = (int)PlayerDataState.currentLevel - 1;
+        currentFloorIndex = (int)PlayerDataState.currentFloor - 1;
         StartCoroutine("LateStart");
     }
 

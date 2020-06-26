@@ -19,16 +19,25 @@ public class SelectWeaponDisplayItem : MonoBehaviour
 
     void Start()
     {
+
+        selectWeapon = GameObject.Find("SelectWeaponPanel").GetComponent<SelectWeaponUIController>();
+    }
+
+    void Update()
+    {
         if (weaponItem != null)
         {
             if (!PlayerDataState.weapons.Contains(weaponItem.name))
             {
                 gameObject.SetActive(false);
             }
-            weaponImage.sprite = weaponItem.image;
-            manaText.text = weaponItem.manaCost.ToString();
+            else
+            {
+                gameObject.SetActive(true);
+                weaponImage.sprite = weaponItem.image;
+                manaText.text = weaponItem.manaCost.ToString();
+            }
         }
-        selectWeapon = GameObject.Find("SelectWeaponPanel").GetComponent<SelectWeaponUIController>();
     }
 
     public void OnSelectWeapon()

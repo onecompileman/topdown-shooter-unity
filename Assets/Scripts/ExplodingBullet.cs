@@ -29,6 +29,9 @@ public class ExplodingBullet : MonoBehaviour
     [SerializeField]
     public Material explodingMaterial;
 
+    [SerializeField]
+    public AudioClip explodeSound;
+
     public bool isExploding = false;
 
     private int touchGroundCtr = 0;
@@ -51,9 +54,7 @@ public class ExplodingBullet : MonoBehaviour
 
     }
 
-    void Update()
-    {
-    }
+    void Update() { }
 
     void OnCollisionEnter(Collision col)
     {
@@ -129,6 +130,8 @@ public class ExplodingBullet : MonoBehaviour
 
             }
         }
+
+        AudioSource.PlayClipAtPoint(explodeSound, transform.position);
 
         Destroy(gameObject);
     }

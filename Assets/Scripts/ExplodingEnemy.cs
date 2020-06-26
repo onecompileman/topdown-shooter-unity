@@ -23,6 +23,9 @@ public class ExplodingEnemy : EnemyController
     [SerializeField]
     public bool destroyOnExplode = true;
 
+    [SerializeField]
+    public AudioClip explodeSound;
+
     private Color explodeSkinColor;
 
 
@@ -89,6 +92,7 @@ public class ExplodingEnemy : EnemyController
 
         if (destroyOnExplode)
         {
+            AudioSource.PlayClipAtPoint(explodeSound, transform.position);
             Destroy(gameObject);
         }
         isExploding = false;

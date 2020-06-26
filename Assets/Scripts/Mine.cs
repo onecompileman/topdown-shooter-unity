@@ -17,6 +17,9 @@ public class Mine : MonoBehaviour
     public float explodeRadius;
 
     [SerializeField]
+    public AudioClip explosionSound;
+
+    [SerializeField]
     public float life;
 
     [SerializeField]
@@ -105,6 +108,7 @@ public class Mine : MonoBehaviour
 
         Instantiate(explodeEffects, transform.position, Quaternion.identity);
         ExplodeToNearby();
+        AudioSource.PlayClipAtPoint(explosionSound, transform.position, 1f);
         Destroy(gameObject);
     }
 }

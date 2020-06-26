@@ -1,10 +1,10 @@
 ﻿using System;
-using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerContinueUIController : AboutUIController
 {
@@ -36,6 +36,12 @@ public class PlayerContinueUIController : AboutUIController
     [SerializeField]
     public PlayerNewUIController playerNewUI;
 
+    [SerializeField]
+    public CameraFollow camera;
+
+    [SerializeField]
+    public GameObject lobbyControls;
+
     private float progressIndicatorStartX = -293.4f;
 
     private float progressIncrementX = 33.5f;
@@ -50,13 +56,22 @@ public class PlayerContinueUIController : AboutUIController
             if (i <= weaponUsed - 1)
             {
                 var weaponItem = weaponItemShops.FirstOrDefault(weaponItems => weaponItems.name == PlayerDataState.currentWeapons[i]);
-
-                weaponSlots[i].SetActive(true);
-                weaponSlots[i].GetComponentInChildren<Image>().sprite = weaponItem.image;
+                if (weaponItem)
+                {
+                    weaponSlots[i].SetActive(true);
+                    weaponSlots[i].GetComponentInChildren<Image>().color = new Color(1, 1, 1);
+                    weaponSlots[i].GetComponentInChildren<Image>().sprite = weaponItem.image;
+                }
+                else
+                {
+                    weaponSlots[i].SetActive(false);
+                    weaponSlots[i].GetComponentInChildren<Image>().color = new Color(0.19f, 0.19f, 0.19f);
+                }
             }
             else
             {
                 weaponSlots[i].SetActive(false);
+                weaponSlots[i].GetComponentInChildren<Image>().color = new Color(0.19f, 0.19f, 0.19f);
             }
         }
 
@@ -83,8 +98,8 @@ public class PlayerContinueUIController : AboutUIController
         {
             PlayerDataState.currentFloor = 0;
             PlayerDataState.currentLevel = 0;
-            PlayerDataState.currentWeapons = null;
-            PlayerDataState.currentCompanions = null;
+            PlayerDataState.currentWeapons = new List<string>();
+            PlayerDataState.currentCompanions = new List<string>();
             PlayerDataState.currentCoinsCollected = 0;
             PlayerDataState.currentGemsCollected = 0;
             PlayCloseAnimation();
@@ -104,7 +119,6 @@ public class PlayerContinueUIController : AboutUIController
         gemsCollectedText.text = PlayerDataState.currentGemsCollected.ToString();
 
         float? positionX = progressIndicatorStartX + (((((PlayerDataState.currentLevel - 1) * 5) + PlayerDataState.currentFloor) - 1) * progressIncrementX);
-        Debug.Log(positionX);
         progressIndicator.transform.position.Set(progressIndicatorStartX, progressIndicator.transform.position.y, progressIndicator.transform.position.z);
 
         LeanTween.moveLocal(progressIndicator, new Vector3(positionX == null ? 0 : (float)positionX, progressIndicator.transform.localPosition.y, progressIndicator.transform.localPosition.z), 1.5f);
@@ -114,7 +128,13 @@ public class PlayerContinueUIController : AboutUIController
     {
         loading.gameObject.SetActive(true);
         loading.PlayOpenAnimation();
-        SaveSystem.SavePlayerData();
         SceneManager.LoadScene("Game");
+    }
+
+    public override void Close()
+    {
+        camera.isFollowingPlayer = true;
+        lobbyControls.SetActive(true);
+        gameObject.SetActive(false);
     }
 }

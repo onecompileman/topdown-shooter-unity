@@ -15,6 +15,12 @@ public class EnemyController : MonoBehaviour
     public float speed;
 
     [SerializeField]
+    public AudioClip enemyShootSound;
+
+    [SerializeField]
+    public AudioClip enemyExplode;
+
+    [SerializeField]
     public float damage;
 
     [SerializeField]
@@ -147,7 +153,6 @@ public class EnemyController : MonoBehaviour
 
     public bool isExploding = false;
 
-
     private Vector3 velocity;
 
     private int speedId;
@@ -194,7 +199,6 @@ public class EnemyController : MonoBehaviour
 
         transform.Translate(velocity * enemySpeed * Time.deltaTime);
 
-
         if (canShoot && canAttack && !isStunned)
         {
             if (Vector3.Distance(follow.position, transform.position) <= distanceToShoot)
@@ -230,9 +234,15 @@ public class EnemyController : MonoBehaviour
 
         onDeathDelegate(enemyRoomIndex);
 
+        AudioSource.PlayClipAtPoint(enemyExplode, transform.position);
+
         Destroy(gameObject);
     }
 
+    public void CallOnDeathDelegate()
+    {
+        onDeathDelegate(enemyRoomIndex);
+    }
     public void TakeDamageEffect()
     {
         StartCoroutine("TakeDamage");
@@ -255,7 +265,7 @@ public class EnemyController : MonoBehaviour
         stun.SetActive(false);
     }
 
-    private void AddMana()
+    protected void AddMana()
     {
         int manaToGenerate = Random.Range(minMana, maxMana + 1);
 
@@ -361,6 +371,7 @@ public class EnemyController : MonoBehaviour
             }
         }
         muzzle.Play();
+        AudioSource.PlayClipAtPoint(enemyShootSound, transform.position);
     }
 
     private IEnumerator TakeDamage()
@@ -394,7 +405,6 @@ public class EnemyController : MonoBehaviour
 
         velocity.Normalize();
     }
-
 
     public virtual void OnCollisionEnter(Collision obj)
     {
